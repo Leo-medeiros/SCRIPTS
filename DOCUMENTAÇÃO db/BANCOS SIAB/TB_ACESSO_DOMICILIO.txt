@@ -1,0 +1,8 @@
+-- SCRIPT DE DOCUMENTAÇÃO DA TABELA ACESSO_DOMICILIO
+
+COMMENT ON COLUMN siabfacil.ACESSO_DOMICILIO.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.ACESSO_DOMICILIO.DESCRICAO IS 'Descrição do acesso ao domicilio';
+
+
+
+

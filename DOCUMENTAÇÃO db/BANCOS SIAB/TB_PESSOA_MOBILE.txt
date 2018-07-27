@@ -1,0 +1,7 @@
+
+--SCRIPT DOCUMENTAÇÃO TABELA PESSOA_MOBILE
+
+COMMENT ON COLUMN siabfacil.PESSOA_MOBILE.cod_area IS 'Codigo de Identificação da área (relacionamento com o campo cod_area da tabela cnes.lfces037)';
+COMMENT ON COLUMN siabfacil.PESSOA_MOBILE.cod_mun IS 'Codigo de Identificação do municipio (relacionamento com o campo cod_mun da tabela cnes.lfces037)';
+COMMENT ON COLUMN siabfacil.PESSOA_MOBILE.seq_equipe IS 'Sequencia da equipe (relacionamento com o campo seq_equipe da tabela cnes.lfces037)';
+COMMENT ON COLUMN siabfacil.PESSOA_MOBILE.pessoa_id IS 'Codigo de Identificação da pessoa (relacionamento com o campo id da tabela siabfacil.pessoa)';

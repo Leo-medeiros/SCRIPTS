@@ -1,0 +1,6 @@
+--SCRIPT DOCUMENTAÇÃO TABELA TIPO_ACIDENTE
+
+COMMENT ON COLUMN siabfacil.TIPO_ACIDENTE.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.TIPO_ACIDENTE.descricao IS 'Descrição do tipo de acidente';
+
+

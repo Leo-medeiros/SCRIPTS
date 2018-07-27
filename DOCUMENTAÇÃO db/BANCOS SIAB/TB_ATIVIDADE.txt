@@ -1,0 +1,14 @@
+--SCRIPT DOCUMENTAÇÃO TABELA ATIVIDADE
+
+COMMENT ON COLUMN siabfacil.ATIVIDADE.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.ATIVIDADE.data  IS 'Data da atividade';
+COMMENT ON COLUMN siabfacil.ATIVIDADE.tipo_de_monitoramento_id  IS 'Código de identificação do monitoramento (relacionamento com o campo id da tabela siabfacil.tipo_de_monitoramento)';
+COMMENT ON COLUMN siabfacil.ATIVIDADE.cod_area  IS 'Código de identificação da áera (relacionamento com o campo cod_area da tabela cnes.lfces038)';
+COMMENT ON COLUMN siabfacil.ATIVIDADE.cod_mun  IS 'Código de identificação do municipio (relacionamento com o campo cod_mun da tabela cnes.lfces038)';
+COMMENT ON COLUMN siabfacil.ATIVIDADE.prof_id  IS 'Código de identificação do profissional (relacionamento com o campo prod_id da tabela cnes.lfces038)';
+COMMENT ON COLUMN siabfacil.ATIVIDADE.seq_equipe  IS 'Sequencia da equipe (relacionamento com o campo seq_equipe da tabela cnes.lfces038)';
+COMMENT ON COLUMN siabfacil.ATIVIDADE.obs  IS 'Observação da atividade';
+COMMENT ON COLUMN siabfacil.ATIVIDADE.monitorador_id  IS 'Código de identificação do monitorador (relacionamento com o campo id da tabela siabfacil.monitorador)';
+COMMENT ON COLUMN siabfacil.ATIVIDADE.participantes  IS 'Exibe o número de participantes da atividade';
+COMMENT ON COLUMN siabfacil.ATIVIDADE.na_unidade  IS 'Informa se a atividade foi realziada na unidade';
+COMMENT ON COLUMN siabfacil.ATIVIDADE.versao  IS 'Exibe a versão do sistema';

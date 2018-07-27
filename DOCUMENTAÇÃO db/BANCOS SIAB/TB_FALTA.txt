@@ -1,0 +1,17 @@
+--SCRIPT DOCUMENTAÇÃO TABELA FALTA
+
+COMMENT ON COLUMN siabfacil.FALTA.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.FALTA.obs IS 'Observação da falta';
+COMMENT ON COLUMN siabfacil.FALTA.data IS 'data que foi lançada a falta';
+COMMENT ON COLUMN siabfacil.FALTA.agenda_id IS 'Código de identificação da agenda (relacionamento com o campo id da tabela siabfacil.agenda)';
+COMMENT ON COLUMN siabfacil.FALTA.motivo_falta_id IS 'Código de identificação do motivo da falta (relacionamento com o campo id da tabela siabfacil.motivo_falta)';
+COMMENT ON COLUMN siabfacil.FALTA.excluida IS 'Informa se foi excluida';
+COMMENT ON COLUMN siabfacil.FALTA.justificativa_id IS 'Código de identificação da justificativa (relacionamento com o campo id da tabela siabfacil.justificativa)';
+
+
+
+
+
+
+
+

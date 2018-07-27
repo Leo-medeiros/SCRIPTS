@@ -1,0 +1,9 @@
+--SCRIPT DOCUMENTAÇÃO TABELA LOG_GERAL
+
+COMMENT ON COLUMN siabfacil.LOG_GERAL.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.LOG_GERAL.ocorrencia IS 'Descrição da ocorrencia';
+COMMENT ON COLUMN siabfacil.LOG_GERAL.data IS 'Data em que a ocorrencia foi realizada';
+COMMENT ON COLUMN siabfacil.LOG_GERAL.usuario_id IS 'Código de identificação do usuario (relacionamento com o campo id da tabela siabfacil.usuarios)';
+COMMENT ON COLUMN siabfacil.LOG_GERAL.mac IS 'Exibe o endereço MAC';
+COMMENT ON COLUMN siabfacil.LOG_GERAL.pessoa_id IS 'Código de identificação da pessoa (relacionamento com o campo id da tabela siabfacil.pessoa)';
+COMMENT ON COLUMN siabfacil.LOG_GERAL.familia_id IS 'Código de identificação da familia (relacionamento com o campo id da tabela siabfacil.familia)';

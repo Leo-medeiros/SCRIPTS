@@ -1,0 +1,9 @@
+--SCRIPT DOCUMENTAÇÃO TABELA ASSINATURA_VISITA
+
+COMMENT ON COLUMN siabfacil.ASSINATURA_VISITA.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.ASSINATURA_VISITA.familia_id  IS 'Codigo de identificação da familia (relacionamento com o campo id da tabela siabfacil.familia)';
+COMMENT ON COLUMN siabfacil.ASSINATURA_VISITA.data  IS 'Data da assinatura';
+COMMENT ON COLUMN siabfacil.ASSINATURA_VISITA.imagem  IS 'Imagem da assinatura';
+COMMENT ON COLUMN siabfacil.ASSINATURA_VISITA.data_exclusao  IS 'Data que foi excluida a assinatura';
+COMMENT ON COLUMN siabfacil.ASSINATURA_VISITA.usuario_exclusao_id  IS 'Código do usuario que fez a exclusão (relacionamento com o campo id da tabela siabfacil.usuario)';
+COMMENT ON COLUMN siabfacil.ASSINATURA_VISITA.usuario_id is 'Código de identificação do usuario (relacionamento com o campo id da tabela siabfacil.usuario)';

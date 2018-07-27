@@ -1,0 +1,19 @@
+--SCRIPT DOCUMENTAÇÃO TABELA SIAB_B_DIA
+
+COMMENT ON COLUMN siabfacil.SIAB_B_DIA.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.SIAB_B_DIA.data_visita IS 'Data da visita do ACS';
+COMMENT ON COLUMN siabfacil.SIAB_B_DIA.insulina IS 'Informa se a pessoa faz dieta';
+COMMENT ON COLUMN siabfacil.SIAB_B_DIA.exercicios IS 'Informa se a pessoa pratica exercicios fisicos';
+COMMENT ON COLUMN siabfacil.SIAB_B_DIA.hipoglicemiante_oral IS 'Informa se a pessoa toma medicamento para diminuir a quantidade de glicose';
+COMMENT ON COLUMN siabfacil.SIAB_B_DIA.ultima_consulta IS 'Exibe a data da última consulta';
+COMMENT ON COLUMN siabfacil.SIAB_B_DIA.person_id IS 'Código de identificação da pessoa (relacionamento com o campo id da tabela siabfacil.pessoa)';
+COMMENT ON COLUMN siabfacil.SIAB_B_DIA.obs IS 'Observação do atendimento';
+COMMENT ON COLUMN siabfacil.SIAB_B_DIA.cod_area IS 'Código da área';
+COMMENT ON COLUMN siabfacil.SIAB_B_DIA.cod_mun IS 'Código do municipio';
+COMMENT ON COLUMN siabfacil.SIAB_B_DIA.prof_id IS 'Código de identificação do profissional';
+COMMENT ON COLUMN siabfacil.SIAB_B_DIA.seq_equipe IS 'Sequencia da equipe';
+COMMENT ON COLUMN siabfacil.SIAB_B_DIA.tipo_de_monitoramento_id IS 'Código de identificação do tipo de monitoramento (relacionamento com o campo id da tabela siabfacil.tipo_de_monitoramento)';
+COMMENT ON COLUMN siabfacil.SIAB_B_DIA.atendimento_id IS 'Código de identificação do atendimento (relacionamento com o campo id da tabela siabfacil.atendimento)';
+COMMENT ON COLUMN siabfacil.SIAB_B_DIA.versao IS 'Exibe a versão do sistema';
+COMMENT ON COLUMN siabfacil.SIAB_B_DIA.pe_diabetico IS 'Informa se a pessoa possui pé diabetico';
+COMMENT ON COLUMN siabfacil.SIAB_B_DIA.amputacao IS 'exibe se a pessoa fez amputação';

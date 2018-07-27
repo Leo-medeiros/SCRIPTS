@@ -1,0 +1,8 @@
+
+--SCRIPT DOCUMENTAÇÃO TABELA TIPO_LOGRADOURO
+
+COMMENT ON COLUMN siabfacil.tipo_logradouro.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.tipo_logradouro.descricao IS 'Descrição do tipo de logradouro';
+
+
+

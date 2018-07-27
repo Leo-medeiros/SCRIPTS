@@ -1,0 +1,31 @@
+
+
+
+SELECT CASE
+           WHEN(GROUPING(LOCAL_DE_ATENDIMENTO) = 1)
+           THEN 'TOTAL'
+           ELSE ISNULL(LOCAL_DE_ATENDIMENTO, 'NAO INFORMADO')
+       END AS LOCAL_DE_ATENDIMENTO,
+       SUM(QUANTIDADE) [QUANTIDADE]
+FROM
+(
+    SELECT B.DESCRICAO LOCAL_DE_ATENDIMENTO,
+           A.data DATA,
+           VW.NomeEquipe EQUIPE,
+           C.nome PROFISSIONAL,
+           COUNT(A.ID) QUANTIDADE
+    FROM SIABFACIL.atendimento_individual A
+         INNER JOIN siabfacil.local_atendimento B ON A.LOCAL_ATENDIMENTO_ID = B.ID
+         INNER JOIN MEDICOS C ON A.PROF_ID = C.CODIGO
+         INNER JOIN PEPMOVIMENTOS D ON A.CODMOV = D.CODIGO
+         LEFT JOIN Indicadores.vw_pep_siab VW ON(A.pessoa_id = VW.IDPep)
+    WHERE A.DATA BETWEEN '01/03/2018' AND '31/03/2018'
+          AND C.CBO1 IN('223116', '225142', '223565', '223710', '2241E1', '223810', '251510', '251605', '223905', ' 223810')
+         AND A.PESSOA_CNS IS NOT NULL
+         AND D.STATUS = 'F'
+    GROUP BY B.DESCRICAO,
+             A.data,
+             VW.NomeEquipe,
+             C.nome
+) AAA
+GROUP BY LOCAL_DE_ATENDIMENTO WITH ROLLUP;

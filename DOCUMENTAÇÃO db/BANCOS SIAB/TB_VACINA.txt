@@ -1,0 +1,13 @@
+--SCRIPT DOCUMENTAÇÃO TABELA VACINA
+
+COMMENT ON COLUMN siabfacil.VACINA.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.VACINA.nome  IS 'Nome da vacina';
+COMMENT ON COLUMN siabfacil.VACINA.periodo_inicial  IS 'Periodo inicial da vacina';
+COMMENT ON COLUMN siabfacil.VACINA.periodo_final  IS 'Periodo fianl da vacina';
+COMMENT ON COLUMN siabfacil.VACINA.referencia  IS 'Referencia da vacina';
+COMMENT ON COLUMN siabfacil.VACINA.faixa_de_idade  IS 'Faixa de idade permitida para vacina';
+COMMENT ON COLUMN siabfacil.VACINA.doencas_prevenidas  IS 'Deonças que a vacina previne';
+COMMENT ON COLUMN siabfacil.VACINA.dose  IS 'Dose da vacina';
+COMMENT ON COLUMN siabfacil.VACINA.referencia_no_nascimento  IS 'Exibe se a vacina tem referencia no nascimento';
+COMMENT ON COLUMN siabfacil.VACINA.periodoca  IS 'Exibe se a vacina é periodia';
+COMMENT ON COLUMN siabfacil.VACINA.periodo  IS 'Exibe o periodo da vacina';

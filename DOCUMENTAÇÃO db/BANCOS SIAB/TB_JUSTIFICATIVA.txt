@@ -1,0 +1,15 @@
+--SCRIPT DOCUMENTAÇÃO TABELA JUSTIFICATIVA
+
+COMMENT ON COLUMN siabfacil.JUSTIFICATIVA.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.JUSTIFICATIVA.nome IS 'Descrição da justificativa';
+COMMENT ON COLUMN siabfacil.JUSTIFICATIVA.descricao IS 'descrição';
+COMMENT ON COLUMN siabfacil.JUSTIFICATIVA.ativa IS 'Informa se esta ativa';
+COMMENT ON COLUMN siabfacil.JUSTIFICATIVA.visita_acs IS 'Informa se tem visita do ACS';
+COMMENT ON COLUMN siabfacil.JUSTIFICATIVA.falta_consulta IS 'Informa se tem falta na consulta';
+
+
+
+
+
+
+

@@ -1,0 +1,4 @@
+--SCRIPT DOCUMENTAÇÃO TABELA TIPO_CANCER
+
+COMMENT ON COLUMN siabfacil.TIPO_CANCER.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.TIPO_CANCER.descricao IS 'Descrição do tipo de cancer';

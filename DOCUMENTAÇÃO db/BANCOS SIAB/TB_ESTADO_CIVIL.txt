@@ -1,0 +1,7 @@
+--SCRIPT DOCUMENTAÇÃO TABELA estado_civil
+
+COMMENT ON COLUMN siabfacil.estado_civil.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.estado_civil.descricao IS 'Descrição dos estados civis';
+
+
+

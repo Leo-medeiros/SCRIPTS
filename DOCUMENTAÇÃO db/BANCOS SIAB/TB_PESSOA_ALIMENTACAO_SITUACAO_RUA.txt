@@ -1,0 +1,7 @@
+
+
+
+--SCRIPT DOCUMENTAÇÃO TABELA PESSOA_ALIMENTACAO_SITUACAO_RUA
+
+COMMENT ON COLUMN siabfacil.PESSOA_ALIMENTACAO_SITUACAO_RUA.pessoa_id IS 'Codigo de Identificação da pessoa (relacionamento com o campo id da tabela siabfacil.pessoa)';
+COMMENT ON COLUMN siabfacil.PESSOA_ALIMENTACAO_SITUACAO_RUA.alimentacao_situacao_rua_id IS 'Código de identificação da situação rua (relacionamento com o campo id da tabela siabfacil.alimentacao_situacao_rua )';

@@ -1,0 +1,15 @@
+--SCRIPT DOCUMENTAÇÃO TABELA CONEXAO_MOBILE
+
+COMMENT ON COLUMN siabfacil.conexao_mobile.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.conexao_mobile.cod_area  IS 'Codigo da aréa';
+COMMENT ON COLUMN siabfacil.conexao_mobile.microarea  IS 'Codigo da microaréa';
+COMMENT ON COLUMN siabfacil.conexao_mobile.operacao  IS 'Exibe a descrição da opeeração realizado no mobile';
+COMMENT ON COLUMN siabfacil.conexao_mobile.data  IS 'Data em que foi realizada';
+COMMENT ON COLUMN siabfacil.conexao_mobile.cod_aparelho  IS 'Codigo do aparelho';
+COMMENT ON COLUMN siabfacil.conexao_mobile.autorizado  IS 'Exobe se foi autorizado';
+COMMENT ON COLUMN siabfacil.conexao_mobile.resposta  IS 'Exibe a resposta referente a operação realizada';
+
+
+
+
+

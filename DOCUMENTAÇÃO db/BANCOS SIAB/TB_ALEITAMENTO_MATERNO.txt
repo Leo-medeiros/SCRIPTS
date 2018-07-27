@@ -1,0 +1,4 @@
+-- SCRIPT DE DOCUMENTAÇÃO DA TABELA ALEITAMENTO_MATERNO
+
+COMMENT ON COLUMN siabfacil.ALEITAMENTO_MATERNO.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.ALEITAMENTO_MATERNO.descricao IS 'Descrição dos tipos de aleitamentos maternos';

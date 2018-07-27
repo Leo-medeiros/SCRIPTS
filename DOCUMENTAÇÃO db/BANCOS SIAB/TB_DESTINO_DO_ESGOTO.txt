@@ -1,0 +1,8 @@
+--SCRIPT DOCUMENTAÇÃO TABELA DESTINO_DO_ESGOTO
+
+COMMENT ON COLUMN siabfacil.DESTINO_DO_ESGOTO.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.DESTINO_DO_ESGOTO.descricao IS 'Descrição do destino do esgoto';
+COMMENT ON COLUMN siabfacil.DESTINO_DO_ESGOTO.ordem IS 'Ordem de exibição';
+
+
+

@@ -1,0 +1,15 @@
+
+
+--SCRIPT DOCUMENTAÇÃO TABELA CONSUMO_ALIMENTAR
+
+COMMENT ON COLUMN siabfacil.CONSUMO_ALIMENTAR.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.CONSUMO_ALIMENTAR.prof_id IS 'Exibe o profissional';
+COMMENT ON COLUMN siabfacil.CONSUMO_ALIMENTAR.pessoa_id IS 'Código de identificação da pessoa (relacionamento com o campo id da tabela siabfacil.pessoa)';
+COMMENT ON COLUMN siabfacil.CONSUMO_ALIMENTAR.local_atendimento_id IS 'Código de identificação do local do atendimento (relacionamento com o campo id da tabela siabfacil.local_atendimento)';
+COMMENT ON COLUMN siabfacil.CONSUMO_ALIMENTAR.uuid_ficha IS 'Indentificação universal - ESUS ficha';
+COMMENT ON COLUMN siabfacil.CONSUMO_ALIMENTAR.tp_cds_origem IS 'Origem';
+COMMENT ON COLUMN siabfacil.CONSUMO_ALIMENTAR.data_atendimento IS 'Data do atendimento';
+COMMENT ON COLUMN siabfacil.CONSUMO_ALIMENTAR.faixa_etaria IS 'Exibe a faixa etaria permitida';
+
+
+

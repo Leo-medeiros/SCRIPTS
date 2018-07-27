@@ -1,0 +1,6 @@
+USE recepcao
+SELECT * FROM cbo
+--UPDATE CBO SET ID_PERFILMONITORADOR = 9
+WHERE codigo in ('234410','224105')
+
+

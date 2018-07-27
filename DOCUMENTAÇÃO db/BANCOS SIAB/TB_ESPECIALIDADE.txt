@@ -1,0 +1,6 @@
+--SCRIPT DOCUMENTAÇÃO TABELA ESPECIALIDADE
+
+COMMENT ON COLUMN siabfacil.ESPECIALIDADE.id IS 'Código de identificação';
+COMMENT ON COLUMN siabfacil.ESPECIALIDADE.descricao IS 'Descrição da especialidade';
+COMMENT ON COLUMN siabfacil.ESPECIALIDADE.depara IS 'Exibe o depara da especialidade';
+COMMENT ON COLUMN siabfacil.ESPECIALIDADE.ativa IS 'Exibe se a especialidad está ativa';

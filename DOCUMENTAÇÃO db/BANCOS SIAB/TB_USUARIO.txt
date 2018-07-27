@@ -1,0 +1,21 @@
+--SCRIPT DOCUMENTAÇÃO TABELA USUARIO
+
+COMMENT ON COLUMN siabfacil.USUARIO.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.USUARIO.tipo_de_acesso_id IS 'Id de identificação do tipo de acesso';
+COMMENT ON COLUMN siabfacil.USUARIO.usuario IS 'Login do usuário';
+COMMENT ON COLUMN siabfacil.USUARIO.senha IS 'senha do usuário';
+COMMENT ON COLUMN siabfacil.USUARIO.data_ativacao IS 'Data de ativação do usuário';
+COMMENT ON COLUMN siabfacil.USUARIO.data_desativacao IS 'data de desativação do usuário';
+COMMENT ON COLUMN siabfacil.USUARIO.cod_area IS 'Código da area do usuário';
+COMMENT ON COLUMN siabfacil.USUARIO.cod_mun IS 'Código do municipio do usuário';
+COMMENT ON COLUMN siabfacil.USUARIO.prof_id IS 'Id de identificação do profissional';
+COMMENT ON COLUMN siabfacil.USUARIO.seq_equipe IS 'Sequencia da equipe';
+COMMENT ON COLUMN siabfacil.USUARIO.nome IS 'Nome do usuário';
+COMMENT ON COLUMN siabfacil.USUARIO.data_de_nascimento IS 'data de nascimento do usuário';
+COMMENT ON COLUMN siabfacil.USUARIO.cpf IS 'CPF do usuário';
+COMMENT ON COLUMN siabfacil.USUARIO.telefone IS 'Telefone do usuário';
+COMMENT ON COLUMN siabfacil.USUARIO.email IS 'Email do usuário';
+COMMENT ON COLUMN siabfacil.USUARIO.cod_cbo IS 'Código do CBO do usuário';
+COMMENT ON COLUMN siabfacil.USUARIO.cns IS 'CNS do usuário';
+COMMENT ON COLUMN siabfacil.USUARIO.prof_sem_equipe_id IS 'Id do profissional sem equipe';
+COMMENT ON COLUMN siabfacil.USUARIO.nome IS 'Nome do usuário';

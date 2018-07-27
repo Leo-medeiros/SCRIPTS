@@ -1,0 +1,7 @@
+-- SCRIPT DE DOCUMENTAÇÃO DA TABELA LOGRADOURO
+
+COMMENT ON COLUMN siabfacil. LOGRADOURO.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.LOGRADOURO.nome IS 'Descrição do logradouro';
+COMMENT ON COLUMN siabfacil.LOGRADOURO.cep IS 'CEP do logradouro';
+COMMENT ON COLUMN siabfacil.LOGRADOURO.bairro_id IS 'Código de identificação do bairro (relacionamento com o campo id da tabela siabfacil.bairro)';
+COMMENT ON COLUMN siabfacil.LOGRADOURO.tipo_logradouro_id IS 'Código de identificação do tipo de logradouro (relacionamento com o campo id da tabela siabfacil.tipo_logradouro)';

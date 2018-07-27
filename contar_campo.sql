@@ -1,0 +1,1 @@
+select len(convert(varchar(max),relatorio)), * from recepcao.dbo.relatorio_lct

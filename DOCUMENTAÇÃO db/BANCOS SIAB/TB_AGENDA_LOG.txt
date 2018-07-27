@@ -1,0 +1,11 @@
+
+
+--SCRIPT DOCUMENTAÇÃO TABELA AGENDA_LOG
+
+COMMENT ON COLUMN siabfacil.AGENDA_LOG.agenda_id IS 'Codigo de Identificação da agenda (relacionamento com o campo id da tabela siabfacil.agenda)';
+COMMENT ON COLUMN siabfacil.AGENDA_LOG.usuario_id IS 'Código de identificação do usuario (relacionamento com o campo id da tabela siabfacil.usuario)';
+COMMENT ON COLUMN siabfacil.AGENDA_LOG.data IS 'Data';
+COMMENT ON COLUMN siabfacil.AGENDA_LOG.operacao IS 'Identificação da operação';
+
+
+

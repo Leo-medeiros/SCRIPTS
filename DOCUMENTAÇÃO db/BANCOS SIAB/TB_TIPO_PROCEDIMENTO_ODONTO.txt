@@ -1,0 +1,17 @@
+
+
+--SCRIPT DOCUMENTAÇÃO TABELA tipo_procedimento_odonto
+
+COMMENT ON COLUMN siabfacil.tipo_procedimento_odonto.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.tipo_procedimento_odonto.grupo_procedimento_odonto_id IS 'Código de de identificação do grupo de procedimento odonto';
+COMMENT ON COLUMN siabfacil.tipo_procedimento_odonto.descricao IS 'Descrição do procedimento de odonto';
+COMMENT ON COLUMN siabfacil.tipo_procedimento_odonto.ordem IS 'Ordem do procedimento';
+COMMENT ON COLUMN siabfacil.tipo_procedimento_odonto.sexo IS 'Exibe a restrição do sexo referente ao procedimento';
+COMMENT ON COLUMN siabfacil.tipo_procedimento_odonto.idade_minima IS 'Idade mínima para utilizar o procedimento';
+COMMENT ON COLUMN siabfacil.tipo_procedimento_odonto.cod IS 'Código do procedimento';
+COMMENT ON COLUMN siabfacil.tipo_procedimento_odonto.individual IS 'Exibe se o procedimento é individual';
+COMMENT ON COLUMN siabfacil.tipo_procedimento_odonto.consolidado IS 'Exibe se o procedimento é consolidade';
+COMMENT ON COLUMN siabfacil.tipo_procedimento_odonto.ativo IS 'Exibe se o procedimento esta ativo';
+COMMENT ON COLUMN siabfacil.tipo_procedimento_odonto.quantidade_maxima IS 'Exibe a quantidade máxima do procedimento';
+
+

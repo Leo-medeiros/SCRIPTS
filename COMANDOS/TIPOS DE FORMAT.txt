@@ -1,0 +1,189 @@
+Formato
+
+Descrição
+
+Exemplos
+
+"d"
+
+Padrão de data abreviada.
+
+Mais informações: Especificador de formato abreviado de data ("d").
+
+2009-06-15T13:45:30 -> 15/6/2009 (en-US)
+
+2009-06-15T13:45:30 -> 15/06/2009 (fr-FR)
+
+2009-06-06/2009/15 (ja-JP) -> 15T13:45:30
+
+"D"
+
+Padrão de data completa.
+
+Mais informações:Especificador de formato de data completa ("D").
+
+2009-06-15T13:45:30 -> segunda-feira, 15 de junho de 2009 (en-US)
+
+2009-06-15T13:45:30 -> 15 г июня 2009. (ru-RU)
+
+2009-06-15T13:45:30 -> Montag, 15. Juni 2009 (de-DE)
+
+"f"
+
+Padrão de data/hora completa (hora abreviada).
+
+Mais informações: Especificador de formato de data completa e hora abreviada ("f").
+
+2009-06-15T13:45:30 -> segunda-feira, 15 de junho de 2009 1:45 PM (en-US)
+
+2009-06-15T13:45:30 -> juni den 15 2009 13:45 (sv-SE)
+
+2009-06-15T13:45:30 -> Δευτέρα, 15 Ιουνίου 2009 1:45 μμ (el-GR)
+
+"F"
+
+Padrão de data/hora completa (hora completa).
+
+Mais informações: Especificador de formato de data completa e hora completa ("F").
+
+2009-06-15T13:45:30 -> segunda-feira, 15 de junho de 2009 1:45:30 PM (en-US)
+
+2009-06-15T13:45:30 -> juni den 15 2009 13:45:30 (sv-SE)
+
+2009-06-15T13:45:30 -> Δευτέρα, 15 Ιουνίου 2009 1:45:30 μμ (el-GR)
+
+"g"
+
+Padrão geral de data/hora (hora abreviada).
+
+Mais informações: Especificador de formato geral de data e hora abreviada ("g").
+
+2009-06-15T13:45:30 -> 15/6/2009 1:45 PM (en-US)
+
+2009-06-15T13:45:30 -> 15/06/2009 13:45 (es-ES)
+
+2009-06-15T13:45:30 -> 15/6/2009 13:45 (zh-CN)
+
+"G"
+
+Padrão geral de data/hora (hora completa).
+
+Mais informações: Especificador de formato geral de data e hora completa ("G").
+
+2009-06-15T13:45:30 -> 15/6/2009 1:45:30 PM (en-US)
+
+2009-06-15T13:45:30 -> 15/06/2009 13:45:30 (es-ES)
+
+2009-06-15T13:45:30 -> 15/6/2009 13:45:30 (zh-CN)
+
+"M", "m"
+
+Padrão de mês/dia.
+
+Mais informações: Especificador de formato de mês ("M", "m").
+
+2009-06-15T13:45:30 -> 15 de junho (en-US)
+
+2009-06-15 -> 15T13:45:30. juni (da-DK)
+
+2009-06-15T13:45:30 -> Juni 15 (id-ID)
+
+"O", "o"
+
+Padrão de data/hora de viagem de ida e volta.
+
+Mais informações: Especificador de formato de viagem de ida e volta ("O", "o").
+
+DateTime valores:
+
+2009-06-15T13:45:30 (DateTimeKind)--> 2009-06-15T13:45:30.0000000-07:00
+
+2009-06-15T13:45:30 (DateTimeKind)--> 2009-06-15T13:45:30.0000000Z
+
+2009-06-15T13:45:30 (DateTimeKind)--> 2009-06-15T13:45:30.0000000
+
+DateTimeOffset valores:
+
+2009-06-15T13:45:30-07:00--> 2009-06-15T13:45:30.0000000-07:00
+
+"R", "r"
+
+Padrão RFC1123
+
+Mais informações: Especificador de formato RFC1123 ("R", "r").
+
+2009-06-15T13:45:30 -> segunda-feira, 15 de junho de 2009 20:45:30 GMT
+
+"s"
+
+Padrão de data/hora classificável.
+
+Mais informações: Especificador de formato classificável ("s").
+
+2009-06-15T13:45:30 (DateTimeKind) -> 2009-06-15T13:45:30
+
+2009-06-15T13:45:30 (DateTimeKind) -> 2009-06-15T13:45:30
+
+"t"
+
+Padrão de hora abreviada.
+
+Mais informações: Especificador de formato de hora abreviada ("t").
+
+2009-06-15T13:45:30 -> 1:45 PM (en-US)
+
+2009-06-15T13:45:30 -> 13:45 (hr-HR)
+
+2009-06-01:45 -> 15T13:45:30 م (ar-EG)
+
+"T"
+
+Padrão de hora completa.
+
+Mais informações: Especificador de formato de hora completa ("T").
+
+2009-06-15T13:45:30 -> 1:45:30 PM (en-US)
+
+2009-06-15T13:45:30 -> 13:45:30 (hr-HR)
+
+2009-06-01:45:30 -> 15T13:45:30 م (ar-EG)
+
+"u"
+
+Padrão classificável universal de data/hora.
+
+Mais informações: Especificador de formato de padrão classificável universal ("u").
+
+Com uma DateTime valor: 2009-06-2009-06-15-> 15T13:45:30 13:45:30Z
+
+Com uma DateTimeOffset valor: 2009-06-2009-06-15-> 15T13:45:30 20:45:30Z
+
+"U"
+
+Padrão universal de data/hora completa.
+
+Mais informações: Especificador de formato de padrão universal completo ("U").
+
+2009-06-15T13:45:30 -> segunda-feira, 15 de junho de 2009 8:45:30 PM (en-US)
+
+2009-06-15T13:45:30 -> juni den 15 2009 20:45:30 (sv-SE)
+
+2009-06-15T13:45:30 -> Δευτέρα, 15 Ιουνίου 2009 8:45:30 μμ (el-GR)
+
+"Y", "y"
+
+Padrão ano mês.
+
+Mais informações: Especificador de formato de ano mês ("Y").
+
+2009-06-15T13:45:30 -> junho de 2009 (en-US)
+
+2009-06-15T13:45:30 -> juni 2009 (da-DK)
+
+2009-06-15T13:45:30 -> Juni 2009 (id-ID)
+
+Qualquer outro caractere único
+
+Especificador desconhecido.
+
+Gera uma FormatException de tempo de execução.

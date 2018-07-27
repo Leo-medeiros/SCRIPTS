@@ -1,0 +1,16 @@
+
+--SCRIPT DOCUMENTAÇÃO TABELA OBITO
+
+COMMENT ON COLUMN siabfacil.OBITO.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.OBITO.tipo_de_monitoramento_id IS 'Código de identificação do tipo de monitoramento';
+COMMENT ON COLUMN siabfacil.OBITO.atendimento_id IS 'Código de identificação do tipo de atendimento';
+COMMENT ON COLUMN siabfacil.OBITO.local IS 'Local do obtio';
+COMMENT ON COLUMN siabfacil.OBITO.causa IS 'Causa do obito';
+COMMENT ON COLUMN siabfacil.OBITO.data IS 'Data do obito';
+COMMENT ON COLUMN siabfacil.OBITO.pessoa_id IS 'Código de identificação da pessoa que foi a obito';
+COMMENT ON COLUMN siabfacil.OBITO.cnes IS 'CNES';
+COMMENT ON COLUMN siabfacil.OBITO.cid IS 'CID da pessoa que foi a obito';
+
+
+
+

@@ -1,0 +1,21 @@
+--SCRIPT DOCUMENTAÇÃO TABELA JUSTIFICATIVA_MOBILE
+
+COMMENT ON COLUMN siabfacil.JUSTIFICATIVA_MOBILE.justificativa_id IS 'Codigo de Identificação da justificativa';
+COMMENT ON COLUMN siabfacil.JUSTIFICATIVA_MOBILE.cod_area IS 'Código da área';
+COMMENT ON COLUMN siabfacil.JUSTIFICATIVA_MOBILE.cod_mun IS 'Código do municipio';
+COMMENT ON COLUMN siabfacil.JUSTIFICATIVA_MOBILE.prof_id IS 'Código de identificação do profissional';
+COMMENT ON COLUMN siabfacil.JUSTIFICATIVA_MOBILE.seq_equipe IS 'Sequencia da equipe';
+
+
+
+
+
+
+
+
+
+
+
+
+
+

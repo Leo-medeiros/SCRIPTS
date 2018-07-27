@@ -1,0 +1,56 @@
+USE RECEPCAO
+GO
+SELECT * FROM PACIENTES
+--UPDATE PACIENTES SET COD_FAMILIA = NULL
+WHERE NOME LIKE '%Ana Vitória de Souza%'
+
+SELECT * FROM PACIENTES
+WHERE NOME LIKE '%ATANAZIO%'
+
+SELECT * FROM PEPMOVIMENTOS
+WHERE CODPAC = 53436
+
+select * from prontuario_gestante where id_Prontuario_Gestante = 10266
+
+select * from prontuario_gestante_pre_natal a
+inner join prontuario_gestante b on a.id_pront_gestante_pre_natal = b.id_pront_gestante_pre_natal
+where b.id_ in (108226
+,108993
+,109259
+,112024
+,113883
+,113889
+,114354
+,123723
+,123755
+,142088
+,142117
+,142147
+,143014
+,143059
+,149679
+,153366
+,153645
+,153646
+,153985
+,154032
+,157539
+,157731
+,160840
+,161203
+,163390
+,165254
+,168297)
+
+SELECT * delete  FROM PRONTUARIO_GESTANTE_PRE_NATAL 
+WHERE ID_PRONT_GESTANTE_PRE_NATAL IN (18844
+,19065
+,19409
+,19979
+,19982
+,20241
+,20378
+,20525
+,20640
+,20717
+)

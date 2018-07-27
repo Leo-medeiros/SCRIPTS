@@ -1,0 +1,4 @@
+SELECT * FROM agenda_falta
+CROSS JOIN AGENDA_TIPO_SERVICO
+
+

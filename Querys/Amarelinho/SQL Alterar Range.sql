@@ -1,0 +1,20 @@
+USE RECEPCAO
+GO
+
+TRUNCATE TABLE recepcao.dbo.codbarrasnv
+GO
+
+BEGIN TRY
+	ALTER TABLE [dbo].[codbarrasnv] DROP CONSTRAINT [CK_RANGE]
+end try
+begin catch
+
+end catch
+GO
+ALTER TABLE recepcao.dbo.codbarrasnv ADD CONSTRAINT CK_RANGE CHECK (CODIGO BETWEEN 1400561710 AND 1401061709)
+GO
+
+DBCC CHECKIDENT (codbarrasnv, RESEED, 1400561710)
+GO
+
+

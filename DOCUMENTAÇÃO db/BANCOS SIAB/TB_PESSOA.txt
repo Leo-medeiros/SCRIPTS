@@ -1,0 +1,141 @@
+-- SCRIPT DE DOCUMENTAÇÃO TABELA PESSOA	
+COMMENT ON COLUMN siabfacil.pessoa.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.pessoa.nome IS 'Nome da Pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.SEXO IS 'Sexo da Pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.email IS 'Email da Pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.telefone IS 'Telefone da Pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.Familia_id IS 'Codigo de identificação da familia da pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.salario IS 'Salario da Pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.plano_de_saude_id IS 'Codigo de identificação do Plano de saude da Pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.posicao_familiar_id IS 'Codigo de identificação da posição familiar da pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.data_nascimento IS 'Data de nascimento da Pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.alfabetizado IS 'Identifica se a pessoa é alfabetizada ou não';
+COMMENT ON COLUMN siabfacil.pessoa.frequenta_escola IS 'Identifica se a pessoa frequenta escola ou não';
+COMMENT ON COLUMN siabfacil.pessoa.trabalhando IS 'Identifica se a pessoa trabalha ou não';
+COMMENT ON COLUMN siabfacil.pessoa.trabalho_obs IS 'Observação do trabalho';
+COMMENT ON COLUMN siabfacil.pessoa.grupos_de_pessoas_obs IS 'Observação do grupo de pessoas';
+COMMENT ON COLUMN siabfacil.pessoa.nome_do_cartorio IS 'Nome do Cartorio';
+COMMENT ON COLUMN siabfacil.pessoa.livro_certidao IS 'Livro da certidão';
+COMMENT ON COLUMN siabfacil.pessoa.pagina_certidao IS 'Pagina da certidão';
+COMMENT ON COLUMN siabfacil.pessoa.data_certidao IS 'Data da certidão';
+COMMENT ON COLUMN siabfacil.pessoa.certidao IS 'Numero da certidão de nascimento';
+COMMENT ON COLUMN siabfacil.pessoa.titulo_de_eleitor IS 'Titulo de eleitor da pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.zona_titulo_de_eleitor IS 'Zona do titulo de eleitor';
+COMMENT ON COLUMN siabfacil.pessoa.sessao_titulo_de_eleitor IS 'Sessão do titulo de eleitor';
+COMMENT ON COLUMN siabfacil.pessoa.data_titulo_eleitor IS 'Data do titulo de eleitor';
+COMMENT ON COLUMN siabfacil.pessoa.rg IS 'RG da pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.data_rg IS 'Data do RG';
+COMMENT ON COLUMN siabfacil.pessoa.cpf IS 'CPF da pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.cns IS 'Cartão nacional do SUS da pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.pis IS 'PIS da pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.ocupacao_id IS 'Codigo de indetificação da ocupação da pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.nome_da_mae IS 'Nome da mãe da pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.nome_do_pai IS 'Nome do pai da pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.cod_orgao_emissor_rg IS 'Codigo do orgão emissor do rg';
+COMMENT ON COLUMN siabfacil.pessoa.cod_tipo_certidao IS 'Codigo do tipo da certidão';
+COMMENT ON COLUMN siabfacil.pessoa.cod_uf_rg IS 'Codigo UF do RG';
+COMMENT ON COLUMN siabfacil.pessoa.data_ativacao IS 'Data de ativação da Pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.data_desativacao IS 'Data de desativação da Pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.cd_raca IS 'Codigo da Raça da Pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.cod_mun_nascimento IS 'Código do município de nascimento da pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.observacoes IS 'observacoes';
+COMMENT ON COLUMN siabfacil.pessoa.pesado_ao_nascer IS 'Exibe se a pessoa foi ou não pesada ao nascer';
+COMMENT ON COLUMN siabfacil.pessoa.nascido_acima_2500_g IS 'Exibe se a pessoa nasceu acima de 2500g';
+COMMENT ON COLUMN siabfacil.pessoa.religiao_id IS 'Código de identificação da Religião da Pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.cod_etnia IS 'Código de identificação da Etnia';
+COMMENT ON COLUMN siabfacil.pessoa.estado_civil_id IS 'Código de identificação do estado civil da pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.escolaridade_id IS 'Codigo de identificação da escolaridade da pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.atualizado IS 'Exibe se foi atualizado';
+COMMENT ON COLUMN siabfacil.pessoa.mae_pessoa_id IS 'Código da mae da pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.versao IS 'Versão do sistema';
+COMMENT ON COLUMN siabfacil.pessoa.telefone_2 IS 'Telefone da pessoa 2';
+COMMENT ON COLUMN siabfacil.pessoa.telefone_3 IS 'Telefone da pessoa 3';
+COMMENT ON COLUMN siabfacil.pessoa.mobile IS 'Exibe se o cadastro da pessoa foi feito pelo desktop ou mobile';
+COMMENT ON COLUMN siabfacil.pessoa.nis IS 'NIS da pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.nascimento_mae IS 'Data de nascimento da mãe da Pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.escolaridade_mae IS 'Código de identificação da escolaridade da mãe da pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.peso_nascimento IS 'Peso da pessoa ao nascer';
+COMMENT ON COLUMN siabfacil.pessoa.altura_nascimento IS 'Altura da pessoa ao nascer';
+COMMENT ON COLUMN siabfacil.pessoa.perimetro_cefalico_nascimento IS 'Exibe a massa cefalica da pessoa ao nascer';
+COMMENT ON COLUMN siabfacil.pessoa.tipo_parto IS 'Exibe o tipo de parto da pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.apgar_1_minuto IS 'Exibe o resultado do apgar 1 minuto da pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.apgar_5_minuto IS 'Exibe o resultado do apgar 5 minutos da pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.teste_pezinho_avaliado IS 'Teste do pezinho avaliado';
+COMMENT ON COLUMN siabfacil.pessoa.teste_pezinho IS 'Data que o teste do pezinho foi realizado';
+COMMENT ON COLUMN siabfacil.pessoa.nome_cuidador IS 'Exibe o nome do cuidador';
+COMMENT ON COLUMN siabfacil.pessoa.escolaridade_cuidador IS 'Codigo de identificação da escolaridade do cuidador';
+COMMENT ON COLUMN siabfacil.pessoa.def_fisica IS 'Exibe se a pessoa tem deficiência física';
+COMMENT ON COLUMN siabfacil.pessoa.def_mental IS 'Exibe se a pessoa tem deficiência mental';
+COMMENT ON COLUMN siabfacil.pessoa.def_visual IS 'Exibe se a pessoa tem deficiência visual';
+COMMENT ON COLUMN siabfacil.pessoa.def_auditiva IS 'Exibe se a pessoa tem deficiência auditiva';
+COMMENT ON COLUMN siabfacil.pessoa.apelido IS 'Exibe o apelido da pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.nascimento_responsavel IS 'Data de nascimento do responsável ';
+COMMENT ON COLUMN siabfacil.pessoa.cns_responsavel IS 'CNS do responsável';
+COMMENT ON COLUMN siabfacil.pessoa.plantas_medicinais IS 'Nome das plantas medicinais';
+COMMENT ON COLUMN siabfacil.pessoa.grau_parentesco_visitado IS 'parente do morador de rua';
+COMMENT ON COLUMN siabfacil.pessoa.maternidade_referencia IS 'Exibe a maternidade que a gestante fez acompanhamento';
+COMMENT ON COLUMN siabfacil.pessoa.outra_instituicao_acompanhamento IS 'Exibe se é acompanhado por convenios, hospital particular ou outros';
+COMMENT ON COLUMN siabfacil.pessoa.dependente_drogas IS 'Exibe se a pessoa é dependente de drogas';
+COMMENT ON COLUMN siabfacil.pessoa.frequenta_benzedeira IS 'Exibe se a pessoa frequenta benzedeira';
+COMMENT ON COLUMN siabfacil.pessoa.povo_comunidade_tradicional IS ' crenças e costumes culturais da pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.grupo_comunitario IS 'Exibe se a pessoa parcitipa de grupo comunitario';
+COMMENT ON COLUMN siabfacil.pessoa.situacao_rua IS 'Exibe se o paciente é morador de rua';
+COMMENT ON COLUMN siabfacil.pessoa.situacao_rua_referencia_familiar IS 'Exibe a situação da rua da referencia familia';
+COMMENT ON COLUMN siabfacil.pessoa.situacao_rua_beneficio IS 'Exibe a situcao da rua do beneficio';
+COMMENT ON COLUMN siabfacil.pessoa.tem_teve_cancer IS 'Exibe se a pessoa tem ou teve cancêr';
+COMMENT ON COLUMN siabfacil.pessoa.avc_derrame IS 'Exibe se a pessoa teve Derrame';
+COMMENT ON COLUMN siabfacil.pessoa.infarto IS 'Exibe se a pessoa teve infarto';
+COMMENT ON COLUMN siabfacil.pessoa.tratamento_mental IS 'Exibe se a pessoa faz tratamento mental';
+COMMENT ON COLUMN siabfacil.pessoa.recusa_cadastro IS 'Exibe se a pessoa se recusou a fazer o cadastro';
+COMMENT ON COLUMN siabfacil.pessoa.praticas_integrativas IS 'Exibe se a pessoa faz praticas integrativas';
+COMMENT ON COLUMN siabfacil.pessoa.uuid IS 'Indentificação universal - ESUS';
+COMMENT ON COLUMN siabfacil.pessoa.tempo_situacao_rua_id IS 'Tempo que está como morador de rua';
+COMMENT ON COLUMN siabfacil.pessoa.nacionalidade_id IS 'Código de identificação da nacionalidade da pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.orientacao_sexual_id IS 'Código de identificação da orientação sexual da pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.pais_nascimento_id IS 'Código de identificação do pais de nascimento da pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.alimentacoes_dia_situacao_rua_id IS 'Quantidade de alimentação do morador de rua';
+COMMENT ON COLUMN siabfacil.pessoa.responsavel_crianca_id IS 'Código de identificação do responsavel da criança';
+COMMENT ON COLUMN siabfacil.pessoa.situacao_trabalho_id IS 'Código de identificação da situação do trabalho';
+COMMENT ON COLUMN siabfacil.pessoa.situacao_peso_id IS 'Código de identificação do peso da pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.condicao_saude_1 IS 'Condição de saúde da pessoa 1';
+COMMENT ON COLUMN siabfacil.pessoa.condicao_saude_2 IS 'Condição de saúde da pessoa 2';
+COMMENT ON COLUMN siabfacil.pessoa.condicao_saude_3 IS 'Condição de saúde da pessoa 3';
+COMMENT ON COLUMN siabfacil.pessoa.cod_cbo IS 'Exibe o código do CBO da pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.frequenta_cuidador_tradicional IS 'Exibe se a pessoa frequanta cuidador tradicional';
+COMMENT ON COLUMN siabfacil.pessoa.dnv IS 'Declaração de nascido vivo da pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.local_cadastro IS 'Exibe o local de cadastro';
+COMMENT ON COLUMN siabfacil.pessoa.local_permanencia_diurno IS 'Onde permanece durante do dia  - morador de rua';
+COMMENT ON COLUMN siabfacil.pessoa.local_permanencia_noturno IS 'Onde permanece durante a noite  - morador de rua';
+COMMENT ON COLUMN siabfacil.pessoa.mae_desconhecida IS 'Exibe se a mãe da pessoa é desconhecida';
+COMMENT ON COLUMN siabfacil.pessoa.rne IS 'Registro nacional de estrangeiro';
+COMMENT ON COLUMN siabfacil.pessoa.data_visita_odonto IS 'Exibe a data da visita do profissional de odontologia';
+COMMENT ON COLUMN siabfacil.pessoa.domiciliado IS 'Exibe se a pessoa é domiciliada';
+COMMENT ON COLUMN siabfacil.pessoa.domiciliado_cuidador IS 'Pessoa que cuida do paciente quando está internado em casa';
+COMMENT ON COLUMN siabfacil.pessoa.teve_internacao IS 'Exibe se a pessoa teve internação';
+COMMENT ON COLUMN siabfacil.pessoa.teve_internacao_motivo IS 'Exibe o motivo da internação da pessoa';
+COMMENT ON COLUMN siabfacil.pessoa.cancer_outro IS 'Exibe se a pessoa teve outro tipo de cancêr';
+COMMENT ON COLUMN siabfacil.pessoa.programa_idoso IS 'Exibe se a pessoa participa do programa para idoso';
+COMMENT ON COLUMN siabfacil.pessoa.programa_deficiente IS 'Exibe se a pessoa participa do programa para deficiente';
+COMMENT ON COLUMN siabfacil.pessoa.drogas IS 'Código de identificação de drogas';
+COMMENT ON COLUMN siabfacil.pessoa.cancer IS 'Código de identificação do cancer';
+--COMMENT ON COLUMN siabfacil.pessoa.pic IS '';
+COMMENT ON COLUMN siabfacil.pessoa.atividade_fisica IS 'Exibe se a pessoa pratica atividades físicas';
+COMMENT ON COLUMN siabfacil.pessoa.statustemtevedoençarespiratoria IS 'Exibe se a pessoa tem ou teve doença respiratória';
+COMMENT ON COLUMN siabfacil.pessoa.statustemtevedoençacardiaca IS 'Exibe se a pessoa tem ou teve doença cardiaca';
+COMMENT ON COLUMN siabfacil.pessoa.statustemtevedoençarins IS 'Exibe se a pessoa tem ou teve doença nos rins';
+COMMENT ON COLUMN siabfacil.pessoa.pai_desconhecido IS 'Exibe se o pai da pessoa é desconhecido';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

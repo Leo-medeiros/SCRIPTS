@@ -1,0 +1,7 @@
+
+
+
+--SCRIPT DOCUMENTAÇÃO TABELA FAMILIA_EM_CASO_DE_DOENCA
+
+COMMENT ON COLUMN siabfacil.FAMILIA_EM_CASO_DE_DOENCA.familia_id IS 'Codigo de Identificação da familia (relacionamento com o campo id da tabela siabfacil.familia)';
+COMMENT ON COLUMN siabfacil.FAMILIA_EM_CASO_DE_DOENCA.em_caso_de_doenca_id IS 'Código de identificação de em caso de doença (relacionamento com o campo id da tabela siabfacil.em_caso_de_doenca)';

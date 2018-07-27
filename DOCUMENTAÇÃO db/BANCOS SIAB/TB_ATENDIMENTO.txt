@@ -1,0 +1,47 @@
+--SCRIPT DOCUMENTAÇÃO TABELA atendimento
+
+COMMENT ON COLUMN siabfacil.atendimento.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.atendimento.pessoa_id IS 'Codigo de Identificação da pessoa (relacionamento com o campo id da tabela siabfacil.pessoa)';
+COMMENT ON COLUMN siabfacil.atendimento.monitorador_id IS 'Codigo de Identificação do monitorador (relacionamento com o campo id da tabela siabfacil.monitorador)';
+COMMENT ON COLUMN siabfacil.atendimento.data IS 'data e hora do atendimento';
+COMMENT ON COLUMN siabfacil.atendimento.observacao IS 'Observação do atendimento';
+COMMENT ON COLUMN siabfacil.atendimento.cod_area IS 'Codigo da area (relacionamento com o campo cod_area da tabela cnes.lfces037)';
+COMMENT ON COLUMN siabfacil.atendimento.cod_mun IS 'Codigo do município (relacionamento com o campo cod_mun da tabela cnes.lfces037)';
+COMMENT ON COLUMN siabfacil.atendimento.prof_id IS 'Codigo de Identificação do profissional (relacionamento com o campo prof_id da tabela cnes.lfces018)';
+COMMENT ON COLUMN siabfacil.atendimento.seq_equipe IS 'Sequencia da equipe (relacionamento com o campo seq_equipe da tabela cnes.lfces037)';
+COMMENT ON COLUMN siabfacil.atendimento.familia_id IS 'Codigo de Identificação da familia da pessoa (relacionamento com o campod id da tabela siabfacil.familia)';
+COMMENT ON COLUMN siabfacil.atendimento.atendimento_id IS 'Codigo de Identificação do atendimento (relacionamento com o campo atendimento_id da tabela siabfacil.atendimento)';
+COMMENT ON COLUMN siabfacil.atendimento.retorno IS 'Identifica se o atendimento foi retorno';
+COMMENT ON COLUMN siabfacil.atendimento.cid IS 'CID do atendimento (relacionamento com o campo cod da tabela siabfacil.cid)';
+COMMENT ON COLUMN siabfacil.atendimento.excluido IS 'Exibe se a visita foi excluida';
+COMMENT ON COLUMN siabfacil.atendimento.mobile IS 'Exibe se o atendimento foi feito pelo mobile';
+COMMENT ON COLUMN siabfacil.atendimento.inicio IS 'Data e hora do inicio do atendimento';
+COMMENT ON COLUMN siabfacil.atendimento.fim IS 'Data e hora do fim do atendimento';
+COMMENT ON COLUMN siabfacil.atendimento.inconsistencia IS 'Exibe se o atendimento teve alguma inconsistencia';
+COMMENT ON COLUMN siabfacil.atendimento.data_exclusao IS 'Exibe a data da exclusão do atendimento';
+COMMENT ON COLUMN siabfacil.atendimento.usuario_exclusao IS 'Usuario que realizou a exclusão do atendimento (relacionamento com o campo id da tabela siabfacil.usuario)';
+COMMENT ON COLUMN siabfacil.atendimento.cod_cbo IS 'Código de identificação do CBO (relacionamento com o campo cod_cbo da tabela cnes.nfces026)';
+COMMENT ON COLUMN siabfacil.atendimento.unidade_id IS 'Codigo de Identificação da unidade (relacionamento com o campo cod_unidade da tabela cnes.lfces004)';
+COMMENT ON COLUMN siabfacil.atendimento.microarea IS 'Codigo da microarea';
+COMMENT ON COLUMN siabfacil.atendimento.agenda_id IS 'Codigo de identeificação da agenda (relacionamento com o campo ip da tabela siabfacil.agenda)';
+COMMENT ON COLUMN siabfacil.atendimento.cobertura_id IS 'Código de identificação da cobertura de area (relacionamento com o campo id da tabela siabfacil.cobertura)';
+COMMENT ON COLUMN siabfacil.atendimento.cobertura_microarea IS 'Codigo da microarea da cobertura de area';
+COMMENT ON COLUMN siabfacil.atendimento.cobertura_prof_id IS 'Codigo de identificação do profissional da cobertura de area (relacionamento com o campo prof_id da tabela cnes.lfces018)';
+COMMENT ON COLUMN siabfacil.atendimento.importacao_acs_mobile_id IS 'Codigo da importançaõ (relacionamento com o campo id da tabela siabfacil.importacao_acs_mobile)';
+COMMENT ON COLUMN siabfacil.atendimento.data_invalida IS 'Exibe se a data do atendimento é invalida';
+COMMENT ON COLUMN siabfacil.atendimento.versao IS 'Exibe a versão do sistema';
+COMMENT ON COLUMN siabfacil.atendimento.ultima_alteracao IS 'Exibe a data e hora da ultima alteração no atendimento';
+COMMENT ON COLUMN siabfacil.atendimento.latitude IS 'Exibe a altitude do atendimento';
+COMMENT ON COLUMN siabfacil.atendimento.longitude IS 'Exibe a longitude do atendimento';
+COMMENT ON COLUMN siabfacil.atendimento.altitude IS 'Exibe a altitude do atendimento';
+COMMENT ON COLUMN siabfacil.atendimento.posicao IS 'Exibe dados da posição do atendimento';
+COMMENT ON COLUMN siabfacil.atendimento.ws_atendimento_individual_id IS 'Codigo de identificação do ws--ESUS (relacionamento com o campo id da tabela logs.ws_atendimento_individual)';
+COMMENT ON COLUMN siabfacil.atendimento.vd IS 'Visita Domiciliar-ESUS';
+COMMENT ON COLUMN siabfacil.atendimento.mes IS 'Mes do atendimento-ESUS';
+COMMENT ON COLUMN siabfacil.atendimento.ano IS 'Ano do atendimento-ESUS';
+COMMENT ON COLUMN siabfacil.atendimento.turno IS 'Turno do atendimento';
+COMMENT ON COLUMN siabfacil.atendimento.uuid IS ' indentificação universal-ESUS ';
+
+
+
+

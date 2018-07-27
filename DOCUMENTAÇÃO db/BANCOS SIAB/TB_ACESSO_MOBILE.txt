@@ -1,0 +1,13 @@
+-- SCRIPT DE DOCUMENTAÇÃO DA TABELA ACESSO_MOBILE
+
+COMMENT ON COLUMN siabfacil.ACESSO_MOBILE.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.ACESSO_MOBILE.cod_area IS 'Código da área';
+COMMENT ON COLUMN siabfacil.ACESSO_MOBILE.cod_mun IS 'Código do municipio';
+COMMENT ON COLUMN siabfacil.ACESSO_MOBILE.seq_equipe IS 'Sequencia da equipe';
+COMMENT ON COLUMN siabfacil.ACESSO_MOBILE.microarea IS 'Código da microarea';
+COMMENT ON COLUMN siabfacil.ACESSO_MOBILE.data_ativacao IS 'Data de ativação';
+COMMENT ON COLUMN siabfacil.ACESSO_MOBILE.data_desativacao IS 'Data de desativação';
+COMMENT ON COLUMN siabfacil.ACESSO_MOBILE.cod_aparelho IS 'Código do aparelho';
+COMMENT ON COLUMN siabfacil.ACESSO_MOBILE.usuario_ativacao_id IS 'ID do usuario ativo';
+COMMENT ON COLUMN siabfacil.ACESSO_MOBILE.usuario_desativacao_id IS 'ID do usuario desativado';
+

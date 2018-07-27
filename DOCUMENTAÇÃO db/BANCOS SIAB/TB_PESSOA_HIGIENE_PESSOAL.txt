@@ -1,0 +1,4 @@
+--SCRIPT DOCUMENTAÇÃO TABELA PESSOA_HIGIENE_PESSOAL
+
+COMMENT ON COLUMN siabfacil.PESSOA_HIGIENE_PESSOAL.pessoa_id IS 'Codigo de Identificação da pessoa (relacionamento com o campo id da tabela siabfacil.pessoa)';
+COMMENT ON COLUMN siabfacil.PESSOA_HIGIENE_PESSOAL.higiene_pessoal_id  IS 'Código de identificação da higiene pessoal';

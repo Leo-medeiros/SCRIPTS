@@ -1,0 +1,7 @@
+--SCRIPT DOCUMENTAÇÃO TABELA ACOES_NASF
+
+COMMENT ON COLUMN siabfacil.acoes_nasf.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.acoes_nasf.descricao IS 'Descrição das ações';
+
+
+

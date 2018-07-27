@@ -1,0 +1,5 @@
+--SCRIPT DOCUMENTAÇÃO TABELA DESTINO_DO_LIXO
+
+COMMENT ON COLUMN siabfacil.destino_do_lixo.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.destino_do_lixo.descricao IS 'Descrição do destino do lixo';
+COMMENT ON COLUMN siabfacil.destino_do_lixo.ordem IS 'Ordem de exibição';

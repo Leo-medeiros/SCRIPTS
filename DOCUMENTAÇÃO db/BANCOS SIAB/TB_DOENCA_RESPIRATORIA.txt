@@ -1,0 +1,4 @@
+--SCRIPT DOCUMENTAÇÃO TABELA DOENCA_RESPIRATORIA
+
+COMMENT ON COLUMN siabfacil.DOENCA_RESPIRATORIA.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.DOENCA_RESPIRATORIA.descricao IS 'Descrição do tipo de doença respiratoria';

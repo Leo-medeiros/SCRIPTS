@@ -1,0 +1,9 @@
+--SCRIPT DOCUMENTAÇÃO TABELA vigilancia_saude_bucal
+
+COMMENT ON COLUMN siabfacil.vigilancia_saude_bucal.codigo IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.vigilancia_saude_bucal.descricao IS 'Descrição das vigilencias de saúde bucal';
+
+
+
+
+

@@ -1,0 +1,9 @@
+--SCRIPT DOCUMENTAÇÃO TABELA CNES
+
+COMMENT ON COLUMN siabfacil.CNES.cnes IS 'Cadastro Nacional de Estabelecimentos de Saúde';
+COMMENT ON COLUMN siabfacil.CNES.nome_fantasia IS 'Nome fantasia do estabelecimento de saúde';
+COMMENT ON COLUMN siabfacil.CNES.razao_social IS 'Razão social do estabelecimento de saúde';
+COMMENT ON COLUMN siabfacil.CNES.uf IS 'UF do estabelecimento de saúde';
+COMMENT ON COLUMN siabfacil.CNES.mobile IS 'Exibe se foi realizado o cadastro via mobile';
+COMMENT ON COLUMN siabfacil.CNES.ativo IS 'Informa se o estabelecimento de saúde está ativo';
+COMMENT ON COLUMN siabfacil.CNES.gestao IS 'Exibe a gestão do estabelecimento';

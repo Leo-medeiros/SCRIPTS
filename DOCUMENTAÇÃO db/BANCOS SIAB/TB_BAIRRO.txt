@@ -1,0 +1,5 @@
+--SCRIPT DOCUMENTAÇÃO TABELA BAIRRO
+
+COMMENT ON COLUMN siabfacil.bairro.id IS 'Código de identificação';
+COMMENT ON COLUMN siabfacil.bairro.nome IS 'Nome do municipio';
+COMMENT ON COLUMN siabfacil.bairro.cod_mun IS 'Código de municipio';

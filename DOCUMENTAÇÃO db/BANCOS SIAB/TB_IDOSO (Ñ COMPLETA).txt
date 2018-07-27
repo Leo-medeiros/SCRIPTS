@@ -1,0 +1,29 @@
+
+--SCRIPT DOCUMENTAÇÃO TABELA siab_b_idoso
+
+COMMENT ON COLUMN siabfacil.siab_b_idoso.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.siab_b_idoso.pessoa_id IS 'Código de de identificação da pessoa (relacinamento com o campo id da tabela siabfacil.pessoa)';
+COMMENT ON COLUMN siabfacil.siab_b_idoso.data_visita IS 'Exibe a data em que a visita foi realizada'
+COMMENT ON COLUMN siabfacil.siab_b_idoso.mora_sozinho IS 'Informa se o idoso mora sozinho';
+COMMENT ON COLUMN siabfacil.siab_b_idoso.depede_outras_pessoas IS 'Informa se o idoso depende de outras pessoas';
+COMMENT ON COLUMN siabfacil.siab_b_idoso.queda_ultimos_12_meses IS 'Informa se o idoso teve queda nos ultímos 12 meses';
+COMMENT ON COLUMN siabfacil.siab_b_idoso.internacao_ultimos_12_meses IS 'Informa se o idoso teve internação nos ultímos 12 meses';
+COMMENT ON COLUMN siabfacil.siab_b_idoso.trabalha IS 'Informa se o idoso trabalha';
+COMMENT ON COLUMN siabfacil.siab_b_idoso.atividade_fisica IS 'Informa se o idoso pratica atividade fisica';
+COMMENT ON COLUMN siabfacil.siab_b_idoso.alteracao_memoria_ultimos_12_meses IS 'Exibe se o idoso teve alteração de memória nos ultímos 12 meses';
+COMMENT ON COLUMN siabfacil.siab_b_idoso.demencia_vascular IS 'Informa se o idoso possui demencia vascular';
+COMMENT ON COLUMN siabfacil.siab_b_idoso.mal_de_parkinson IS 'Informa se o idoso tem mal de parkinson';
+COMMENT ON COLUMN siabfacil.siab_b_idoso.medicacao IS 'Informa se o idoso toma medicação';
+COMMENT ON COLUMN siabfacil.siab_b_idoso.doencas_osseas IS 'Informa se o idoso possui doenças osseas';
+COMMENT ON COLUMN siabfacil.siab_b_idoso.mal_de_alzheimer IS 'Informa se o idoso tem mal de alzheimer';
+COMMENT ON COLUMN siabfacil.siab_b_idoso.qtd_tipos_medicacao IS 'Exibe a quantidade de medicações tomadas pelo idoso';
+COMMENT ON COLUMN siabfacil.siab_b_idoso.data_equilibrio_marcha IS '';
+COMMENT ON COLUMN siabfacil.siab_b_idoso.equilibrio IS '';
+COMMENT ON COLUMN siabfacil.siab_b_idoso.marcha IS '';
+COMMENT ON COLUMN siabfacil.siab_b_idoso.atendimento_id IS 'Código de identificação do atendimento (relacionamento com o campo id da tabela siabfacil.atendimento)';
+COMMENT ON COLUMN siabfacil.siab_b_idoso.tipo_de_monitoramento_id IS 'Código de identificação do tipo de monitoramento (relacionamento com o campo id da tabela siabfacil.tipo_de_monitoramento)';
+COMMENT ON COLUMN siabfacil.siab_b_idoso.cod_area IS 'Código da área';
+COMMENT ON COLUMN siabfacil.siab_b_idoso.cod_mun IS 'Código do Municipio';
+COMMENT ON COLUMN siabfacil.siab_b_idoso.prof_id IS 'Código do profissional';
+COMMENT ON COLUMN siabfacil.siab_b_idoso.seq_equipe IS 'Sequencia da equipe';
+COMMENT ON COLUMN siabfacil.siab_b_idoso.versao IS 'Exibe a versão do sistema';

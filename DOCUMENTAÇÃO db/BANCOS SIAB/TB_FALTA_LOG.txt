@@ -1,0 +1,8 @@
+--SCRIPT DOCUMENTAÇÃO TABELA FALTA_LOG
+
+COMMENT ON COLUMN siabfacil.FALTA_LOG.falta_id IS 'Codigo de Identificação da falta (relacionamento com o campo id da tabela siabfacil.falta )';
+COMMENT ON COLUMN siabfacil.FALTA_LOG.usuario_id IS 'Código de identificação do usuario (relacionamento com o campo id da tabela siabfacil.usuario)';
+COMMENT ON COLUMN siabfacil.FALTA_LOG.data IS 'Data da realização da operação';
+COMMENT ON COLUMN siabfacil.FALTA_LOG.operacao IS 'Identificador da operação';
+
+

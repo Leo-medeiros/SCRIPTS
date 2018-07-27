@@ -1,0 +1,13 @@
+SELECT B.NOME Profissional, D.NOME Paciente, C.NomeEquipe, c.cns, c.data_nascimento,c.idade, c.mae, A.DATAFINALIZA,
+CASE A.Movimento When 1 THEN 'Consulta Agendada'
+WHEN 2 THEN 'Demanda Espontanea'
+WHEN 3 THEN 'Visita Domiciliar'
+WHEN 4 THEN 'ADM'
+WHEN 6 THEN 'Serviços' 
+END 'TipoConsulta' FROM pepmovimentos A
+INNER JOIN MEDICOS B ON A.CODMED = B.CODIGO
+LEFT JOIN INDICADORES.VW_PEP_SIAB C ON A.CODPAC = C.IDPEP
+INNER JOIN PACIENTES D ON A.CODPAC = D.CODIGO
+
+WHERE B.NOME LIKE '%MEDICO%'
+AND A.DATAFINALIZA BETWEEN '2017-06-05 00:46:03.977' AND '2017-06-09 23:46:03.977'

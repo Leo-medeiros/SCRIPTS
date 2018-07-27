@@ -1,0 +1,5 @@
+--SCRIPT DOCUMENTAÇÃO TABELA TIPO_DE_ACESSO
+
+COMMENT ON COLUMN siabfacil.tipo_de_acesso.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.tipo_de_acesso.descricao IS 'Descrição do tipo de acesso';
+COMMENT ON COLUMN siabfacil.tipo_de_acesso.ativo IS 'Exibe se o tipo de acesso está ativo';

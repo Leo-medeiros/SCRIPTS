@@ -1,0 +1,40 @@
+USE recepcao;
+SELECT DISTINCT D.NOMEEQUIPE, D.NOME, D.DATA_NASCIMENTO, MAE FROM PEPMOVIMENTOS_CID A
+INNER JOIN PEPMOVIMENTOS B ON A.ID_PEPMOVIMENTOS = B.CODIGO
+INNER JOIN CID C ON A.ID_CID = C.ID
+INNER JOIN INDICADORES.VW_PEP_SIAB D ON B.CODPAC = D.IDPEP
+WHERE C.CID10 IN ('B20'     
+,'B200'    
+,'B201  '  
+,'B202 '   
+,'B203  '  
+,'B204  '  
+,'B205  '  
+,'B206 '   
+,'B207 '   
+,'B208 '   
+,'B209 '   
+,'B21  '   
+,'B210 '   
+,'B211 '   
+,'B212  '  
+,'B213'    
+,'B217 '   
+,'B218  '  
+,'B219   ' 
+,'B22     '
+,'B220    '
+,'B221    '
+,'B222    '
+,'B227    '
+,'B23     '
+,'B230    '
+,'B231    '
+,'B232    '
+,'B238'
+, 'B24'
+)
+
+SELECT * FROM CID
+
+

@@ -1,0 +1,57 @@
+--SCRIPT SSA TOTAL   realiza comparacao fechamento entre ssa x ficha A para verificar dos dados geral
+select sum(ngescad)ges, sum(c_0a11)MENOR_1_ANO, sum(nfamicad)FAMILIAS, sum(c_0a11)+sum(pessoas_1a4_anos)+sum(pessoas_5a9_anos)
++sum(pessoas_10a14_anos)+sum(pessoas_15a19_anos)+sum(pessoas_20a39_anos)+sum(pessoas_40a49_anos)+sum(pessoas_50a59_anos)
++sum(pessoas_60_ou_mais_anos) pessoas, sum(d_diabete)DIA, sum(d_hiperten)HA, sum(d_tubercul)TB, sum(d_hansen)HAN
+from siab.siab_saumun A
+inner join siabfacil.fechamento_competencia B
+on A.fechamento_competencia_id = B.id
+where B.ano = 2014
+and B.competencia = 08
+
+union all 
+
+--SCRIPT FICHA A TOTAL
+select sum(ges1)+sum(ges2)ges, sum(fem1) + sum(masc1)menor_1_ano, count(nfamilia) familias, sum(npessoas) pessoas, 
+sum(dia1)+sum(dia2) dia, sum(ha1)+sum(ha2)ha, sum(tbc1)+sum(tbc2)tb, sum(han1)+sum(han2)han
+from siab.siab_sanmun A
+inner join siabfacil.exportacao_siab_ficha_a B
+on A.exportacao_ficha_a_id = B.id
+where B.data_inicio = '2014-08-01'
+and B.data_fim = '2014-08-31'
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                --script gera dados separados para verificação  
+				
+
+--SCRIPT SSA POR EQUIPE/MICRO   
+select A.cod_area, A.cod_microa, sum(ngescad)ges, sum(c_0a11)MENOR_1_ANO, sum(nfamicad)FAMILIAS, sum(c_0a11)+sum(pessoas_1a4_anos)+sum(pessoas_5a9_anos)
++sum(pessoas_10a14_anos)+sum(pessoas_15a19_anos)+sum(pessoas_20a39_anos)+sum(pessoas_40a49_anos)+sum(pessoas_50a59_anos)
++sum(pessoas_60_ou_mais_anos) pessoas, sum(d_diabete)DIA, sum(d_hiperten)HA, sum(d_tubercul)TB, sum(d_hansen)HAN
+from siab.siab_saumun A
+inner join siabfacil.fechamento_competencia B
+on A.fechamento_competencia_id = B.id
+where B.ano = 2014
+and B.competencia = 03 
+group by A.cod_area, A.cod_microa
+order by A.cod_area, A.cod_microa
+
+
+
+--SCRIPT FICHA A POR EQUIPE/MICRO
+select A.cod_area, A.cod_microa, sum(ges1)+sum(ges2)ges, sum(fem1) + sum(masc1)menor_1_ano, count(nfamilia) familias, sum(npessoas) pessoas, 
+sum(dia1)+sum(dia2) dia, sum(ha1)+sum(ha2)ha, sum(tbc1)+sum(tbc2)tb, sum(han1)+sum(han2)han
+from siab.siab_sanmun A
+inner join siabfacil.exportacao_siab_ficha_a B
+on A.exportacao_ficha_a_id = B.id
+where B.data_inicio = '2014-03-01'
+and B.data_fim = '2014-03-31'
+group by A.cod_area, A.cod_microa
+order by A.cod_area, A.cod_microa
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--SCRIPT CONTAR TOTAL PESSOAS PELA FICHA A (ADULTO+CRIANCA)
+select ((select count(id)from siab.siab_adulto where cod_microa = '21')+(select count(id)from siab.siab_crianca where cod_microa = '21')) pessoas;

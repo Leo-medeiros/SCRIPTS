@@ -1,0 +1,4 @@
+--SCRIPT DOCUMENTAÇÃO TABELA GRUPO_DE_MENUS
+
+COMMENT ON COLUMN siabfacil.GRUPO_DE_MENUS.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.GRUPO_DE_MENUS.nome  IS 'Nomes dos menus do sistema';

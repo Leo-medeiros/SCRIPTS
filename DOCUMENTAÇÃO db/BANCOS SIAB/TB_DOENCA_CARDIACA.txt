@@ -1,0 +1,5 @@
+--SCRIPT DOCUMENTAÇÃO TABELA DOENCA_CARDIACA
+
+COMMENT ON COLUMN siabfacil.DOENCA_CARDIACA.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.DOENCA_CARDIACA.descricao IS 'Descrição da doença cardiaca';
+

@@ -1,0 +1,15 @@
+--SCRIPT DOCUMENTAÇÃO TABELA SIAB_B_GES_ACOMPANHAMENTO
+
+COMMENT ON COLUMN siabfacil.siab_b_ges_acompanhamento.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.siab_b_ges_acompanhamento.siab_b_ges_id IS 'DCodigo de Identificação da gestante';
+COMMENT ON COLUMN siabfacil.siab_b_ges_acompanhamento.data_visita IS 'Data da visita';
+COMMENT ON COLUMN siabfacil.siab_b_ges_acompanhamento.obs IS 'Observação';
+COMMENT ON COLUMN siabfacil.siab_b_ges_acompanhamento.cod_area IS 'Codigo da área';
+COMMENT ON COLUMN siabfacil.siab_b_ges_acompanhamento.cod_mun IS 'Codigo do municipio';
+COMMENT ON COLUMN siabfacil.siab_b_ges_acompanhamento.prof_id IS 'Codigo do profissional';
+COMMENT ON COLUMN siabfacil.siab_b_ges_acompanhamento.seq_equipe IS 'Sequencia da equipe';
+COMMENT ON COLUMN siabfacil.siab_b_ges_acompanhamento.tipo_de_monitoramento_id IS 'Codigo de Identificação do tipo de monitoramento';
+COMMENT ON COLUMN siabfacil.siab_b_ges_acompanhamento.atendimento_id IS 'Codigo de Identificação do atendimento';
+
+
+

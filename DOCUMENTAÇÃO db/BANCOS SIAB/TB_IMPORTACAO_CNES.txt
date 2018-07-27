@@ -1,0 +1,6 @@
+--SCRIPT DOCUMENTAÇÃO TABELA IMPORTACAO_CNES
+
+COMMENT ON COLUMN siabfacil.IMPORTACAO_CNES.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.IMPORTACAO_CNES.usuario_id  IS 'Código de identificação do usuario (relacionamento com o campo id da tabela siabfacil.usuario)';
+COMMENT ON COLUMN siabfacil.IMPORTACAO_CNES.data  IS 'Data da importação do cnes';
+COMMENT ON COLUMN siabfacil.IMPORTACAO_CNES.versao  IS 'Informa a versão do sistema';

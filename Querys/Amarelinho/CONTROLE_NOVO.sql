@@ -1,0 +1,9 @@
+/* SELECT PARA VERIFICAR SE O ATENDIMENTO DA TRIAGEM ESTA SENDO GRAVADO, PEGAR O CAMPO ID DA TABELA DE CIMA E COLAR NO
+CAMPO ID_SENHA DA TABELA DE BAIXO*/
+
+select * from recepcao.dbo.controle_senhas
+where senha = '3611'
+
+
+select * from recepcao.dbo.CONTROLE_ACOLHIMENTO_NOVO
+where id_senha = '20421'

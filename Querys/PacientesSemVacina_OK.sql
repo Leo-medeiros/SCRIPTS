@@ -1,0 +1,6 @@
+USE RECEPCAO;
+SELECT DISTINCT B.NOME, B.NomeEquipe, B.MAE, B.CNS, B.IDADE FROM INDICADORES.VW_PEP_SIAB B 
+WHERE b.idpep not in (
+SELECT DISTINCT a.cod_pac FROM vacinas_pacientes A
+INNER JOIN VACINAS C ON C.ID = A.id_vacinas
+)

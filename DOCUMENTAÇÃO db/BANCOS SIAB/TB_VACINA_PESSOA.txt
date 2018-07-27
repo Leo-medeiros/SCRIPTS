@@ -1,0 +1,5 @@
+--SCRIPT DOCUMENTAÇÃO TABELA VACINA_PESSOA
+
+COMMENT ON COLUMN siabfacil.vacina_pessoa.pessoa_id IS 'Codigo de Identificação da pessoa (relacionamento com o campo id da tabela siabfacil.pessoa)';
+COMMENT ON COLUMN siabfacil.vacina_pessoa.vacina_id  IS 'Codigo de Identificação da vacina (relacionamento com o campo id da tabela siabfacil.vacina)';
+COMMENT ON COLUMN siabfacil.vacina_pessoa.data  IS 'Data da vacina';

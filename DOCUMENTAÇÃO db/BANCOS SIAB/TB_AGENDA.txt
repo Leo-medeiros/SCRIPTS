@@ -1,0 +1,23 @@
+--SCRIPT DOCUMENTAÇÃO TABELA AGENDA
+
+COMMENT ON COLUMN siabfacil.AGENDA.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.AGENDA.pessoa_id IS 'Código de de identificação da pessoa (relacionamento com o campo id da tabela siabfacil.pessoa)';
+COMMENT ON COLUMN siabfacil.AGENDA.especialidade_id IS 'Codigo de Identificação da especialidade (relacionamento com o campo id da tabela siabfacil.especialidade)';
+COMMENT ON COLUMN siabfacil.AGENDA.tipo_de_atendimento_id IS 'Codigo de Identificação do tipo de atendimento (relacionamento com o campo id da tabela siabfacil.tipo_de_atendimento)';
+COMMENT ON COLUMN siabfacil.AGENDA.prof_id IS 'Codigo de Identificação do profissional (relacionamento com o campo prof_id da tabela cnes.lfces018)';
+COMMENT ON COLUMN siabfacil.AGENDA.data IS 'Data do agendamento';
+COMMENT ON COLUMN siabfacil.AGENDA.unidade_id IS 'Codigo de Identificação da unidade (relacionamento com o campo unidade_id da tabela cnes.lfces004)';
+COMMENT ON COLUMN siabfacil.AGENDA.regulada IS 'agenda regulada';
+COMMENT ON COLUMN siabfacil.AGENDA.cod_area IS 'Codigo da area (relacionamento com o campo cod_area da tabela cnes.lfces037)';
+COMMENT ON COLUMN siabfacil.AGENDA.cod_mun IS 'Codigo do municipio (relacionamento com o campo cod_mun da tabela cnes.lfces037)';
+COMMENT ON COLUMN siabfacil.AGENDA.seq_equipe IS 'Sequencia da equipe (relacionamento com o campo seq_equipe da tabela cnes.lfces037)';
+COMMENT ON COLUMN siabfacil.AGENDA.cnes IS 'CNES da unidade (relacionamento com o campo cnes da tabela siabfacil.cnes)';
+COMMENT ON COLUMN siabfacil.AGENDA.observacao IS 'Observação do agendamento';
+COMMENT ON COLUMN siabfacil.AGENDA.excluida IS 'Agendamento excluido';
+COMMENT ON COLUMN siabfacil.AGENDA.data_inclusao IS 'Data da inclusão do agendamento';
+COMMENT ON COLUMN siabfacil.AGENDA.usuario_inclusao_id IS 'Codigo de Identificação do usuario que realizou a inclusão (relacionamento com o campo id da tabela siabfacil.usuario)';
+COMMENT ON COLUMN siabfacil.AGENDA.versao IS 'Versão do sistema';
+
+
+
+

@@ -1,0 +1,8 @@
+--SCRIPT DOCUMENTAÇÃO TABELA ENCAMINHAMENTO_PARA_MONITORAMENTO
+
+COMMENT ON COLUMN siabfacil.ENCAMINHAMENTO_PARA_MONITORAMENTO.cod_cbo IS 'Codigo de Identificação do CBO (relacionamento com o campo cod_cbo da tabela cnes.nfces026)';
+COMMENT ON COLUMN siabfacil.ENCAMINHAMENTO_PARA_MONITORAMENTO.atendimento_id IS 'Código de identificação do atendimento (relacionamento com o campo atendimento_id da tabela siabfacil.monitoramento)';
+COMMENT ON COLUMN siabfacil.ENCAMINHAMENTO_PARA_MONITORAMENTO.tipo_de_monitoramento_id IS 'Código de identificação do Monitoramento (relacionamento com o campo tipo_de_monitoramento_id da tabela iabfacil.monitoramento)';
+
+
+

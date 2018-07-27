@@ -1,0 +1,13 @@
+--SCRIPT DOCUMENTAÇÃO TABELA ACOMPANHAMENTO_CONTRACEPTIVO
+
+COMMENT ON COLUMN siabfacil.ACOMPANHAMENTO_CONTRACEPTIVO.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.ACOMPANHAMENTO_CONTRACEPTIVO.data IS 'Data';
+COMMENT ON COLUMN siabfacil.ACOMPANHAMENTO_CONTRACEPTIVO.pessoa_id IS 'Código de identificação da pessoa (relacionamento com o campo id da tabela siabfacil.pessoa)';
+COMMENT ON COLUMN siabfacil.ACOMPANHAMENTO_CONTRACEPTIVO.metodo_contraceptivo_id IS 'Código de identificação do metodo contraceptivo (relacionamento com o campo id da tabela siabfacil.metodo_contraceptivo )';
+
+
+
+
+
+
+

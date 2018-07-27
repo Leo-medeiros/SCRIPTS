@@ -1,0 +1,28 @@
+--SCRIPT PESQUISAR PROF_ID DIFERENTES ENTRE FAMILIA E PESSOA_FAMILIA_LOG
+select C.cod_area, C.microarea, C.numero, A.id, A.nome, A.data_nascimento
+from siabfacil.pessoa A
+inner join siabfacil.pessoa_familia_log B
+on A.id = B.pessoa_id
+inner join siabfacil.familia C
+on C.id = A.familia_id
+where B.prof_id <> C.prof_id
+and B.data_saida is null
+order by A.data_nascimento desc
+
+
+
+--SCRIPT CORRIGIR PROF_ID DIFERENTES ENTRE FAMILIA E PESSOA_FAMILIA_LOG
+update siabfacil.pessoa_familia_log set prof_id = familia.prof_id 
+from siabfacil.familia 
+where pessoa_familia_log.familia_id = familia.id
+and pessoa_familia_log.pessoa_id in (select B.pessoa_id
+from siabfacil.pessoa A
+inner join siabfacil.pessoa_familia_log B
+on A.id = B.pessoa_id
+inner join siabfacil.familia C
+on C.id = A.familia_id
+where B.prof_id <> C.prof_id
+and B.data_saida is null
+)
+and data_saida is null
+and pessoa_familia_log.prof_id <> familia.prof_id

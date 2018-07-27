@@ -1,0 +1,109 @@
+--BUSCAR PACIENTES MEC
+USE DBMec;
+GO
+SELECT PA.NOME [NOME],
+       ISNULL(PA.NOMESOCIAL,'') [NOME SOCIAL],
+       ISNULL(PA.CNS,'') [CARTAO SUS],
+       PA.SEXO [SEXO],
+       CONVERT(VARCHAR(10), PA.DataNascimento, 103) [DATA DE NASCIMENTO],
+       UN.NOME [UNIDADE],
+ISNULL((
+    SELECT DESCRICAO
+    FROM Sistema.tipo_atendimento TP
+    WHERE EV.id_TipoAtendimento = TP.ID
+),'') [TIPO DE ATENDIMENTO],
+       AR.NOME [EQUIPE/AREA],
+       MI.NOME [MICROAREA],
+       SO.DESCRICAO [ORIGEM],
+       CONVERT(VARCHAR(10), EV.DataHora, 103) [DATA],
+ISNULL((
+    SELECT Descricao
+    FROM Sistema.CondicoesAvaliadas CA
+    WHERE CA.ID = ECA.ID_CondicoesAvaliadas
+),'') [CONDICOES AVALIADA],
+       ISNULL((EV.cid_principal),'') [CID],
+       ISNULL(EV.INFECCAOATUAL_PNM,'') [PNM ATUA],
+       ISNULL(EV.INFECCAOATUAL_ITU ,'')[ITU ATUAL],
+       ISNULL(EV.INFECCAOATUAL_VAS,'') [VAS ATUAL],
+       ISNULL(EV.INFECCAOATUAL_UPP ,'') [UPP ATUAL],
+       ISNULL(EV.INFECCAOATUAL_PELE,'') [PELE ATUAL],
+       ISNULL(EV.INFECCAOATUAL_USOANTIBIOTICO,'') [USA ANTIBIOTICO],
+       ISNULL(EV.INFECCAOATUAL_ANTIBIOTICOQUAL,'') [QUAL],
+       ISNULL(EV.INFECCAONOVA_PNM ,'') [PNM NOVA],
+       ISNULL(EV.INFECCAONOVA_ITU,'') [ITU NOVA],
+       ISNULL(EV.INFECCAONOVA_VAS,'') [VAS NOVA],
+       ISNULL(EV.INFECCAONOVA_UPP,'') [UPP NOVA],
+       ISNULL(EV.INFECCAONOVA_PELE,'') [PELE NOVA],
+       ISNULL(EV.INFECCAONOVA_USOANTIBIOTICO,'') [USA ANTIBIOTICO],
+       ISNULL(EV.INFECCAONOVA_ANTIBIOTICOQUAL,'') [QUAL],
+       CASE WHEN EV.HAS = 'N' THEN ''
+	  WHEN EV.HAS = 'S' THEN 'S'
+	  END [HIPERTENSÃO],
+       CASE WHEN EV.DM2 = 'N' THEN ''
+	  WHEN EV.DM2= 'S' THEN 'S' 
+	  END [DIABETES],
+       CASE WHEN EV.DPOC = 'N' THEN '' 
+	  WHEN EV.DPOC = 'S' THEN  'S' 
+	  END [DPOC],
+       CASE WHEN EV.AVC = 'N' THEN ''
+	  WHEN EV.AVC = 'S' THEN 'S'
+	  END [ACIDENTE VASCULAR CEREBRAL],
+       ISNULL(EV.PA,''),
+       ISNULL(EV.SATO2,''),
+       ISNULL(EV.FC,''),
+       ISNULL (EV.ABDV,''),
+       CASE
+           WHEN EV.TIPOVISITA = 'R'
+           THEN 'REVISITA'
+           ELSE 'EXTRA'
+       END 'TIPO DE VISITA',
+       CASE
+           WHEN EV.SONDASCATETERES = '0'
+           THEN 'NAO'
+           ELSE 'SIM'
+       END 'SONDA(S) CATETER(S)',
+       CASE
+           WHEN EV.LESOESPELE IS NULL
+           THEN 'NAO'
+           ELSE 'SIM'
+       END 'LESÃO (ÕES) DE PELE',
+       CASE
+           WHEN EV.PIORAFUNCIONAL = '0'
+           THEN 'NAO'
+           ELSE 'SIM'
+       END 'PIORA FUNCIONAL',
+       AT.CONCLUSAO,
+(
+    SELECT TOP 1 CASE(TIPOALTA)
+                     WHEN 'AP'
+                     THEN 'PERMANENCIA'
+                     WHEN 'AA'
+                     THEN 'ALTA ADMINISTRATIDA DA AD'
+                     WHEN 'SO'
+                     THEN 'SAIDA POR OBTIO/FINAL DE ACOMPANHAMENTO POS-OBITO'
+                     WHEN 'AC'
+                     THEN 'ALTA CLINICA DA AD'
+                     WHEN 'EN'
+                     THEN 'ENCAMINHAMENTO PARA ATENCAO BASICA'
+                     WHEN 'UR'
+                     THEN 'URGENCIA/ EMERGENCIA'
+                     WHEN 'IH'
+                     THEN 'INTERNACAO HOSPITALAR'
+                     ELSE ' '
+                 END 'TIPO DE ALTA'
+    FROM Atendimento.Alta TP
+    WHERE TP.ID_Paciente = EV.ID_PACIENTE
+) 'TIPO DE ALTA',
+       PP.Nome 'PROFISSIONAL',
+       PP.CNS 'CNS DO PROFISSIONAL',
+       PP.ID_CBO 'CBO DO PROFISSIONAL'
+FROM PESSOA.PACIENTE PA
+     INNER JOIN SISTEMA.AREA AR ON(PA.ID_AREA = AR.ID)
+     INNER JOIN SISTEMA.MICROAREA MI ON(AR.ID = MI.ID_AREA)
+     INNER JOIN SISTEMA.UNIDADES UN ON(AR.ID_UNIDADE = UN.ID)
+     INNER JOIN ATENDIMENTO.EVOLUCAO EV ON(PA.ID = EV.ID_PACIENTE)
+     LEFT JOIN ATENDIMENTO.TRATAMENTO AT ON(PA.ID = AT.ID_PACIENTE)
+     INNER JOIN SISTEMA.ORIGENS SO ON(AT.ID_ORIGEM = SO.ID)
+     INNER JOIN Pessoa.Profissional PP ON(EV.ID_Profissional = PP.ID)
+     LEFT JOIN Atendimento.Evolucao_CondicoesAvaliadas ECA ON(EV.ID = ECA.ID_Evolucao)
+ORDER BY ev.DataHora;

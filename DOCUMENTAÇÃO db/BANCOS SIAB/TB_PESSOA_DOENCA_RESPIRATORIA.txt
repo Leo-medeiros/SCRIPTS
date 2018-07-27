@@ -1,0 +1,4 @@
+--SCRIPT DOCUMENTAÇÃO TABELA PESSOA_DOENCA_RESPIRATORIA
+
+COMMENT ON COLUMN siabfacil.pessoa_doenca_respiratoria.pessoa_id IS 'Codigo de Identificação da pessoa (relacionamento com o campo id da tabela siabfacil.pessoa)';
+COMMENT ON COLUMN siabfacil.pessoa_doenca_respiratoria.doenca_respiratoria_id IS 'Código de identificação da doença respiratoria';

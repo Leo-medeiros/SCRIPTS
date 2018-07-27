@@ -1,0 +1,39 @@
+USE DBMec;
+GO
+  SET DATEFORMAT DMY
+SELECT DISTINCT LTRIM(RTRIM(P.Nome)) [NOME_PACIENTE], CONVERT(VARCHAR(10),P.DataNascimento,103) [DT_NASCIMENTO],
+SISTEMA.CALCULA_IDADE_COMPLETA(p.DataNascimento) [IDADE], 
+CASE WHEN EV.HAS='N' THEN '' ELSE '' END [HIPERTENSAO],
+CASE WHEN EV.DM2 ='N' THEN '' ELSE '' END [DIABETES],
+CASE WHEN EV.DPOC='N' THEN '' ELSE '' END [DOENCA PULMONAR VASCULAR CRONICA],
+CASE WHEN EV.AVC='N' THEN '' ELSE '' END [AVC],
+       C.Codigo [CID10],
+       C.Descricao [DESCRICAO_CID],
+       CONVERT(VARCHAR(10), AT.DataInicio, 103) [DATA_INCIO],
+       isnull(CONVERT(VARCHAR(10), AT.DataPrevisaoDeAlta, 103),'') [DATA_PREVISA_DE_ALTA],
+ISNULL((SELECT PONTUACAO FROM Atendimento.Barthel BAR WHERE AT.ID_BarthelInicial = BAR.ID),'') [PONTUACAO_INICIAL_BARTHEL], CASE 
+WHEN AT.Situacao = 'A' THEN 'ALTA'
+WHEN AT.Situacao = 'T' THEN 'INTERNADO'
+WHEN AT.Situacao = 'I' THEN 'INELEGIVEL'
+ELSE ''
+END [SITUACAO],
+O.Descricao [ORIGEM],AT.Conclusao [CONCLUSAO], PROF.Nome [PROFISSIONAL]
+FROM Atendimento.Tratamento AT
+     INNER JOIN Pessoa.Paciente P ON AT.ID_Paciente = P.ID
+     INNER JOIN Sistema.Cid C ON AT.ID_CID = C.Codigo
+	INNER JOIN Sistema.Origens O ON AT.ID_Origem = O.ID
+	INNER JOIN Pessoa.Profissional PROF ON AT.ID_Profissional = PROF.ID
+	LEFT JOIN Atendimento.Evolucao EV ON P.ID = EV.ID_Paciente
+	WHERE P.DataNascimento IS NOT NULL AND P.DataNascimento > '01/01/1800'
+
+
+
+
+
+
+
+-- HAS- HIPERTENSO
+--DM2 DIABETICO
+-- DPOC, AVC
+
+

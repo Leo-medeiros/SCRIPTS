@@ -1,0 +1,1 @@
+alter table recepcao.dbo.controle_acolhimento add hgt varchar(15)

@@ -1,0 +1,10 @@
+--SCRIPT DOCUMENTAÇÃO TODAS AS TABELAS
+
+-- USUARIO
+COMMENT ON TABLE siabfacil.USUARIO IS 'Responsável por gravar informações sobre os usuários do sistema.';
+
+-- TIPO_DROGA
+COMMENT ON TABLE siabfacil.tipo_droga IS 'Responsável por gravar os tipos de drogas que são exibidas no sistema.';
+
+
+

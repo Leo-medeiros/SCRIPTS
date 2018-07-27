@@ -1,0 +1,17 @@
+--SCRIPT DOCUMENTAÇÃO TABELA siab_b_ha
+
+COMMENT ON COLUMN siabfacil.siab_b_ha.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.siab_b_ha.data_visita IS 'Data da visita do ACS';
+COMMENT ON COLUMN siabfacil.siab_b_ha.dieta IS 'Informa se a pessoa faz dieta';
+COMMENT ON COLUMN siabfacil.siab_b_ha.exercicios IS 'Informa se a pessoa faz execicios';
+COMMENT ON COLUMN siabfacil.siab_b_ha.pressao_minima IS 'Exibe a pressão minima arterial';
+COMMENT ON COLUMN siabfacil.siab_b_ha.pressao_maxima IS 'Exibe a pressão maxima arterial';
+COMMENT ON COLUMN siabfacil.siab_b_ha.ultima_consulta IS 'Data da última consulta realizada';
+COMMENT ON COLUMN siabfacil.siab_b_ha.obs IS 'Observação da consulta';
+COMMENT ON COLUMN siabfacil.siab_b_ha.cod_area IS 'Codigo da aréa';
+COMMENT ON COLUMN siabfacil.siab_b_ha.cod_mun IS 'Codigo do município';
+COMMENT ON COLUMN siabfacil.siab_b_ha.prof_id IS 'Codigo de Identificação do profissional';
+COMMENT ON COLUMN siabfacil.siab_b_ha.seq_equipe IS 'Sequencia da equipe';
+COMMENT ON COLUMN siabfacil.siab_b_ha.tipo_de_monitoramento_id IS 'Codigo de Identificação do tipo de monitoramento';
+COMMENT ON COLUMN siabfacil.siab_b_ha.atendimento_id IS 'Codigo de Identificação do atendimento';
+COMMENT ON COLUMN siabfacil.siab_b_ha.versao IS 'Exibe a versão do sistema';

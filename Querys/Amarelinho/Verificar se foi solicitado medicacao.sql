@@ -1,0 +1,1 @@
+select * from recepcao.dbo.med_medicacao

@@ -1,0 +1,53 @@
+-- PROF_ID DA ALINE = "0000010472644718"
+SELECT a.COD_AREA, a.MICROAREA,a.numero,a.data_desativacao, b.nome,* FROM SIABFACIL.FAMILIA a
+inner join siabfacil.pessoa b on a.id = b.familia_id
+ WHERE a.PROF_ID = '0000010472644718'  and b.posicao_familiar_id = 1
+order by a.numero
+
+
+
+
+SELECT a.COD_AREA, a.MICROAREA,a.numero,a.data_desativacao, b.nome,* FROM SIABFACIL.FAMILIA a
+inner join siabfacil.pessoa b on a.id = b.familia_id
+ WHERE a.PROF_ID = '0000010472644718'  and b.posicao_familiar_id = 1
+order by a.numero
+
+SELECT * FROM SIABFACIL.FAMILIA
+
+
+BEGIN TRANSACTION
+SELECT SEQ_EQUIPE,* FROM SIABFACIL.FAMILIA
+UPDATE SIABFACIL.FAMILIA SET  MICROAREA= '04'
+WHERE PROF_ID = '0000010472644718' 
+
+
+SELECT * FROM CNES.LFCES038
+--UPDATE CNES.LFCES038 SET DT_DESLIGAMENTO = '2018-04-24'
+WHERE PROF_ID = '0000010472644718'--AND COD_AREA='5438'
+
+UPDATE SIABFACIL.FAMILIA SET COD_AREA = 5443
+WHERE PROF_ID = '0000010472644718' 
+
+
+UPDATE CNES.LFCES038 SET DT_DESLIGAMENTO = NULL
+WHERE PROF_ID = '0000010472644718'
+
+COMMIT;
+ROLLBACK;
+
+
+
+
+
+
+
+
+select * from cnes.lfces038
+-- update cnes.lfces038 set dt_desligamento = '2018-04-24'
+where prof_id='0000007638204743'
+
+select * from siabfacil.familia
+where prof_id = '0000007638204743'
+
+
+select * from  SIABFACIL.PESSOA_FAMILIA_LOG where  PROF_ID = '0000010472644718'

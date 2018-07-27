@@ -1,0 +1,4 @@
+--SCRIPT DOCUMENTAÇÃO TABELA FERIADO
+
+COMMENT ON COLUMN siabfacil.FERIADO.data IS 'data do feriado';
+COMMENT ON COLUMN siabfacil.FERIADO.descricao IS 'Descrição do tipo de feriado';

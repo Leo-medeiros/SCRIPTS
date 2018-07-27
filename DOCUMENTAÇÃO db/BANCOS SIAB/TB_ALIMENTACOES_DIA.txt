@@ -1,0 +1,4 @@
+--SCRIPT DOCUMENTAÇÃO TABELA ALIMENTACOES_DIA
+
+COMMENT ON COLUMN siabfacil.ALIMENTACOES_DIA.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.ALIMENTACOES_DIA.descricao IS 'Descrição dos tipos de alimentações por dia';

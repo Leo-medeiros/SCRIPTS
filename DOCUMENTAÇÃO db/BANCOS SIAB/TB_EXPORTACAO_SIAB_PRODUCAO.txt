@@ -1,0 +1,10 @@
+--SCRIPT DOCUMENTAÇÃO TABELA EXPORTACAO_SIAB_PRODUCAO
+
+COMMENT ON COLUMN siabfacil.EXPORTACAO_SIAB_PRODUCAO.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.EXPORTACAO_SIAB_PRODUCAO.usuario_id  IS 'Codigo de identificação do usuario (relacionamento com o campo id da tabela siabfacil.usuario)';
+COMMENT ON COLUMN siabfacil.EXPORTACAO_SIAB_PRODUCAO.cod_area  IS 'Código de identificação da área (relacionamento com o campo cod_area da tabela cnes.lfces037)';
+COMMENT ON COLUMN siabfacil.EXPORTACAO_SIAB_PRODUCAO.cod_mun  IS 'Código de identificação do municipio (relacionamento com o campo cod_mun da tabel cnes.lfces037)';
+COMMENT ON COLUMN siabfacil.EXPORTACAO_SIAB_PRODUCAO.seq_equipe  IS 'Sequencia da equipe (Relacionamento com o campo seq_equipe da tabela cnes.lfces037)';
+COMMENT ON COLUMN siabfacil.EXPORTACAO_SIAB_PRODUCAO.data_inicio  IS 'Data de incio';
+COMMENT ON COLUMN siabfacil.EXPORTACAO_SIAB_PRODUCAO.data_fim  IS 'Data final';
+COMMENT ON COLUMN siabfacil.EXPORTACAO_SIAB_PRODUCAO.versao  IS 'Exibe a versão do sistema';

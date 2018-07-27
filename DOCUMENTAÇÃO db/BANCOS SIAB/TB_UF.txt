@@ -1,0 +1,4 @@
+--SCRIPT DOCUMENTAÇÃO TABELA UF
+
+COMMENT ON COLUMN siabfacil.UF.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.UF.name  IS 'Nome da Unidade da Federação (UF)';

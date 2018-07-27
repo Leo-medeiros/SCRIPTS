@@ -1,0 +1,9 @@
+select DATA_DESATIVACAO,* from siabfacil.pessoa where ID = 157357
+
+
+SELECT * FROM SIABFACIL.ATENDIMENTO 
+WHERE PESSOA_ID =157357
+AND DATE_PART('year',data) = '2018'
+
+select * from siabfacil.atendimento
+where familia_id = '44128'

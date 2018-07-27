@@ -1,0 +1,53 @@
+--SCRIPT DOCUMENTAÇÃO TABELA SIAB_C
+
+COMMENT ON COLUMN siabfacil.SIAB_C.id IS 'Código de identificação';
+COMMENT ON COLUMN siabfacil.SIAB_C.data_visita IS 'Exibe a data da visita do ACS';
+COMMENT ON COLUMN siabfacil.SIAB_C.peso IS 'Exibe o peso da criança';
+COMMENT ON COLUMN siabfacil.SIAB_C.altura IS 'Exibe a altura da criança';
+COMMENT ON COLUMN siabfacil.SIAB_C.atendimento_odontologico_mes IS 'Exibe se a criança teve atendimento odontologico no mês';
+COMMENT ON COLUMN siabfacil.SIAB_C.grupo_educativo_mes IS 'Exibe se a criança frequentou grupo educativo no mês';
+COMMENT ON COLUMN siabfacil.SIAB_C.pronto_socorro_mes IS 'Informa se a criança passou no pronto socorro no mês';
+COMMENT ON COLUMN siabfacil.SIAB_C.vacina_em_dia IS 'Exibe se a crianças está com a vacina em dia';
+COMMENT ON COLUMN siabfacil.SIAB_C.desnutrido IS 'Exibe se a criança está desnutrida(o)';
+COMMENT ON COLUMN siabfacil.SIAB_C.obeso IS 'Exibe se criança está obesa(o)';
+COMMENT ON COLUMN siabfacil.SIAB_C.diarreia IS 'Exibe se a criança teve diarreia';
+COMMENT ON COLUMN siabfacil.SIAB_C.diarreia_tro IS 'Exibe se a criança teve diarreia e usaram TRO';
+COMMENT ON COLUMN siabfacil.SIAB_C.ira IS 'Exibe se a criança tem infecção respiratória aguda';
+COMMENT ON COLUMN siabfacil.SIAB_C.antibiotico IS 'Exibe se a criança faz uso de antibiótico';
+COMMENT ON COLUMN siabfacil.SIAB_C.hospitalizacao IS 'Exibe se a criança teve hospitalização';
+COMMENT ON COLUMN siabfacil.SIAB_C.acidente_infancia IS 'Exibe se a criança teve algum acidente na infância';
+COMMENT ON COLUMN siabfacil.SIAB_C.frequenta_creche IS 'Exibe se a criança frequenta creche';
+COMMENT ON COLUMN siabfacil.SIAB_C.creche_escola_id IS 'Código de identificação da creche ou escola (relacinamento com o campo id da tabela siabfacil.creche_escola)';
+COMMENT ON COLUMN siabfacil.SIAB_C.pessoa_id IS 'Código de identificação da pessoa (Relacionamento com o campo id da tabela siabfacil.pessoa)';
+COMMENT ON COLUMN siabfacil.SIAB_C.atendimento_id IS 'Código de identificação do atendimento (Relacinamento com o campo id da tabela siabfacil.atendimento)';
+COMMENT ON COLUMN siabfacil.SIAB_C.tipo_de_monitoramento_id IS 'Código de identificação do monitoramento (Relacionamento com o campo id da tabela SIABFACIL.tipo_de_monitoramento)';
+COMMENT ON COLUMN siabfacil.SIAB_C.cod_area IS 'Código da área';
+COMMENT ON COLUMN siabfacil.SIAB_C.cod_mun IS 'Código do municipio';
+COMMENT ON COLUMN siabfacil.SIAB_C.prof_id IS 'Código de identificação do profissional';
+COMMENT ON COLUMN siabfacil.SIAB_C.seq_equipe IS 'Sequencia da equipe';
+COMMENT ON COLUMN siabfacil.SIAB_C.versao IS 'Exibe a versão do sistema';
+COMMENT ON COLUMN siabfacil.SIAB_C.outra_doenca IS 'Exibe se a criança possui outra doença';
+COMMENT ON COLUMN siabfacil.SIAB_C.tipo_acidente_id IS 'Código de identificação do tipo de acidente (Relacionamento com o campo id da tabela SIABFACIL.tipo_acidente)';
+COMMENT ON COLUMN siabfacil.SIAB_C.consulta_med IS 'Exibe se a criança passou em consulta médica';
+COMMENT ON COLUMN siabfacil.SIAB_C.consulta_enf IS 'Exibe se a criança passou em consulta de enfermagem';
+COMMENT ON COLUMN siabfacil.SIAB_C.consulta_faltou IS 'Exibe se a criança faltou na consulta';
+COMMENT ON COLUMN siabfacil.SIAB_C.consulta_enf IS 'Exibe se a criança passou em consulta de enfermagem';
+COMMENT ON COLUMN siabfacil.SIAB_C.consulta_nao_informado IS 'Exibe se a consulta não foi informada';
+COMMENT ON COLUMN siabfacil.SIAB_C.local_acompanhamento_esf IS 'Exibe o local de acompanhamento';
+COMMENT ON COLUMN siabfacil.SIAB_C.local_acompanhamento_outros IS 'Exibe outros locais de acompanhento';
+COMMENT ON COLUMN siabfacil.SIAB_C.local_acompanhamento_convenio IS 'Exibe o local de acompanhamento de convenio';
+COMMENT ON COLUMN siabfacil.SIAB_C.obs_peso IS 'Observação sobre o peso da criança';
+COMMENT ON COLUMN siabfacil.SIAB_C.obs_altura IS 'Observação sobre a altura da criança';
+COMMENT ON COLUMN siabfacil.SIAB_C.consulta_nao_agendou IS 'Exibe se a consulta não foi agendada';
+COMMENT ON COLUMN siabfacil.SIAB_C.obs_altura IS 'Observação sobre a altura da criança';
+COMMENT ON COLUMN siabfacil.SIAB_C.consulta_motivo_falta IS 'Exibe o motivo da falta';
+COMMENT ON COLUMN siabfacil.SIAB_C.obs IS 'Exibe a obervação do atendimento';
+
+
+
+
+
+
+
+
+

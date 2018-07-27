@@ -1,0 +1,4 @@
+--SCRIPT DOCUMENTAÇÃO TABELA DOENCA_RINS
+
+COMMENT ON COLUMN siabfacil.DOENCA_RINS.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.DOENCA_RINS.descricao IS 'Descrição do tipo de doença nos rins';

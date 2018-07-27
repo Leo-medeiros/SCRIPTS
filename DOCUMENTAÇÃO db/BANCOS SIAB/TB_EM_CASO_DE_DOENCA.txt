@@ -1,0 +1,4 @@
+--SCRIPT DOCUMENTAÇÃO TABELA EM_CASO_DE_DOENCA
+
+COMMENT ON COLUMN siabfacil.EM_CASO_DE_DOENCA.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.EM_CASO_DE_DOENCA.descricao  IS 'Descrição dos locais';

@@ -1,0 +1,7 @@
+--SCRIPT DOCUMENTAÇÃO TABELA CNES_MOBILE
+
+COMMENT ON COLUMN siabfacil.CNES_MOBILE.cnes IS 'Codigo de Identificação do cnes (Relacionamento com o campo cnes da tabela siabfacil.cnes)';
+COMMENT ON COLUMN siabfacil.CNES_MOBILE.cod_area  IS 'Código de identificação da áera (relacionamento com o campo cod_area da tabela siabfacil.cnes)';
+COMMENT ON COLUMN siabfacil.CNES_MOBILE.cod_mun  IS 'Código de identificalção do municipio (relacionamento com o campo cod_mun da tabela siabfacil.cnes)';
+COMMENT ON COLUMN siabfacil.CNES_MOBILE.prof_id  IS 'Código de identificação do profissional (relacionamento com o campo prof_id da tabela siabfacil.cnes)';
+COMMENT ON COLUMN siabfacil.CNES_MOBILE.seq_equipe  IS 'Sequencia da equipe (relacionamento com o campo seq_equipe da tabela siabfacil.cnes)';

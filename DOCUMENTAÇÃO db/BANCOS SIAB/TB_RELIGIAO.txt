@@ -1,0 +1,7 @@
+--SCRIPT DOCUMENTAÇÃO TABELA RELIGIAO
+
+COMMENT ON COLUMN siabfacil.religiao.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.religiao.descricao  IS 'Descrição do tipo de religião';
+
+
+

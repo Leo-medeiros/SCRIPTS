@@ -1,0 +1,4 @@
+--SCRIPT DOCUMENTAÇÃO TABELA POSICAO_FAMILIAR
+
+COMMENT ON COLUMN siabfacil.POSICAO_FAMILIAR.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.POSICAO_FAMILIAR.descricao IS 'Descrição da posição familiar';

@@ -1,0 +1,126 @@
+--BUSCAR PACIENTES MEC
+USE DBMec;
+GO
+SELECT PA.NOME 'NOME',
+       PA.NOMESOCIAL 'NOME SOCIAL',
+       PA.CNS 'CARTAO SUS',
+       PA.SEXO 'SEXO',
+       CONVERT(VARCHAR(10), PA.DataNascimento, 103) 'DATA DE NASCIMENTO',
+       UN.NOME 'UNIDADE',
+(
+    SELECT DESCRICAO
+    FROM Sistema.tipo_atendimento TP
+    WHERE EV.id_TipoAtendimento = TP.ID
+) 'TIPO DE ATENDIMENTO',
+       AR.NOME 'EQUIPE/AREA',
+       MI.NOME 'MICROAREA',
+       SO.DESCRICAO 'ORIGEM',
+       CONVERT(VARCHAR(10), EV.DataHora, 103) 'DATA',
+(
+    SELECT Descricao
+    FROM Sistema.CondicoesAvaliadas CA
+    WHERE CA.ID = ECA.ID_CondicoesAvaliadas
+) 'CONDICOES AVALIADAS',
+       EV.cid_principal 'CID',
+       EV.INFECCAOATUAL_PNM 'PNM ATUAL',
+       EV.INFECCAOATUAL_ITU 'ITU ATUAL',
+       EV.INFECCAOATUAL_VAS 'VAS ATUAL',
+       EV.INFECCAOATUAL_UPP 'UPP ATUAL',
+       EV.INFECCAOATUAL_PELE 'PELE ATUAL',
+       EV.INFECCAOATUAL_USOANTIBIOTICO 'USA ANTIBIOTICO',
+       EV.INFECCAOATUAL_ANTIBIOTICOQUAL 'QUAL',
+       EV.INFECCAONOVA_PNM 'PNM NOVA',
+       EV.INFECCAONOVA_ITU 'ITU NOVA',
+       EV.INFECCAONOVA_VAS 'VAS NOVA',
+       EV.INFECCAONOVA_UPP 'UPP NOVA',
+       EV.INFECCAONOVA_PELE 'PELE NOVA',
+       EV.INFECCAONOVA_USOANTIBIOTICO 'USA ANTIBIOTICO',
+       EV.INFECCAONOVA_ANTIBIOTICOQUAL 'QUAL',
+       EV.HAS 'HIPERTENSÃO',
+       EV.DM2 'DIABETES',
+       EV.DPOC 'DOENÇA PULMONAR OBSTRUTICA CRÔNICA',
+       EV.AVC 'ACIDENTE VASCULAR CEREBRAL',
+       EV.PA,
+       EV.SATO2,
+       EV.FC,
+       EV.ABDV,
+       CASE
+           WHEN EV.TIPOVISITA = 'R'
+           THEN 'REVISITA'
+           ELSE 'EXTRA'
+       END 'TIPO DE VISITA',
+       CASE
+           WHEN EV.SONDASCATETERES = '0'
+           THEN 'NAO'
+           ELSE 'SIM'
+       END 'SONDA(S) CATETER(S)',
+       CASE
+           WHEN EV.LESOESPELE IS NULL
+           THEN 'NAO'
+           ELSE 'SIM'
+       END 'LESÃO (ÕES) DE PELE',
+       CASE
+           WHEN EV.PIORAFUNCIONAL = '0'
+           THEN 'NAO'
+           ELSE 'SIM'
+       END 'PIORA FUNCIONAL',
+       AT.CONCLUSAO,
+(
+    SELECT TOP 1 CASE(TIPOALTA)
+                     WHEN 'AP'
+                     THEN 'PERMANENCIA'
+                     WHEN 'AA'
+                     THEN 'ALTA ADMINISTRATIDA DA AD'
+                     WHEN 'SO'
+                     THEN 'SAIDA POR OBTIO/FINAL DE ACOMPANHAMENTO POS-OBITO'
+                     WHEN 'AC'
+                     THEN 'ALTA CLINICA DA AD'
+                     WHEN 'EN'
+                     THEN 'ENCAMINHAMENTO PARA ATENCAO BASICA'
+                     WHEN 'UR'
+                     THEN 'URGENCIA/ EMERGENCIA'
+                     WHEN 'IH'
+                     THEN 'INTERNACAO HOSPITALAR'
+                     ELSE ' '
+                 END 'TIPO DE ALTA'
+    FROM Atendimento.Alta TP
+    WHERE TP.ID_Paciente = EV.ID_PACIENTE
+) 'TIPO DE ALTA',
+       PP.Nome 'PROFISSIONAL',
+       PP.CNS 'CNS DO PROFISSIONAL',
+       PP.ID_CBO 'CBO DO PROFISSIONAL'
+FROM PESSOA.PACIENTE PA
+     INNER JOIN SISTEMA.AREA AR ON(PA.ID_AREA = AR.ID)
+     INNER JOIN SISTEMA.MICROAREA MI ON(AR.ID = MI.ID_AREA)
+     INNER JOIN SISTEMA.UNIDADES UN ON(AR.ID_UNIDADE = UN.ID)
+     INNER JOIN ATENDIMENTO.EVOLUCAO EV ON(PA.ID = EV.ID_PACIENTE)
+     LEFT JOIN ATENDIMENTO.TRATAMENTO AT ON(PA.ID = AT.ID_PACIENTE)
+     INNER JOIN SISTEMA.ORIGENS SO ON(AT.ID_ORIGEM = SO.ID)
+     INNER JOIN Pessoa.Profissional PP ON(EV.ID_Profissional = PP.ID)
+     LEFT JOIN Atendimento.Evolucao_CondicoesAvaliadas ECA ON(EV.ID = ECA.ID_Evolucao)
+ORDER BY ev.DataHora;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+

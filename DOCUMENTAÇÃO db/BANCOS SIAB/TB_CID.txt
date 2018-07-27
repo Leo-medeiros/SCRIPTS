@@ -1,0 +1,4 @@
+-- SCRIPT DE DOCUMENTAÇÃO TABELA cid	
+COMMENT ON COLUMN siabfacil.cid.cod IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.cid.descricao IS 'Descrição do CID';
+COMMENT ON COLUMN siabfacil.cid.monitorar IS 'Informa se o CID é monitorado';

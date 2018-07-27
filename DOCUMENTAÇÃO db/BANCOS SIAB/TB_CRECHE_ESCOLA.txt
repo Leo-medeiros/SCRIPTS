@@ -1,0 +1,4 @@
+-- SCRIPT DE DOCUMENTAÇÃO TABELA creche_escola	
+COMMENT ON COLUMN siabfacil.creche_escola.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.creche_escola.nome IS 'Exibe o nome das crecher e escolas';
+COMMENT ON COLUMN siabfacil.creche_escola.data_desativacao IS 'Exibe a data de desativação';

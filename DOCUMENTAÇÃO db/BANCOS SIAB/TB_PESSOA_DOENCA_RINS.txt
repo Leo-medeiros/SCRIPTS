@@ -1,0 +1,8 @@
+--SCRIPT DOCUMENTAÇÃO TABELA PESSOA_DOENCA_RINS
+
+COMMENT ON COLUMN siabfacil.PESSOA_DOENCA_RINS.pessoa_id IS 'Codigo de Identificação da pessoa (relacionamento com o campo id da tabela siabfacil.pessoa)';
+COMMENT ON COLUMN siabfacil.PESSOA_DOENCA_RINS.doenca_rins_id IS 'Código de identificação da doença dos rins (relacionamento com o campo id da tabela siabfacil.doenca_rins)';
+
+
+
+

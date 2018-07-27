@@ -1,0 +1,8 @@
+-- SCRIPT DE DOCUMENTAÇÃO DA TABELA config_painel
+
+COMMENT ON COLUMN siabfacil. config_painel.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil. config_painel.tempo IS 'Exibe o tempo do painel';
+COMMENT ON COLUMN siabfacil. config_painel.numero_casas IS 'Exibe o número de casas';
+COMMENT ON COLUMN siabfacil. config_painel.tamanho_fonte IS 'Exibe o tamanho da fonte do painel';
+COMMENT ON COLUMN siabfacil. config_painel.visualiza_producao IS 'Informa se o painel visualiza a produção';
+COMMENT ON COLUMN siabfacil. config_painel.tamanho_fonte_relat IS 'Exibe o tamanho da fonte do relatório';

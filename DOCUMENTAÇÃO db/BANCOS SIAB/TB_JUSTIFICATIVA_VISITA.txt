@@ -1,0 +1,18 @@
+--SCRIPT DOCUMENTAÇÃO TABELA JUSTIFICATIVA_VISITA
+
+COMMENT ON COLUMN siabfacil.JUSTIFICATIVA_VISITA.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.JUSTIFICATIVA_VISITA.data IS 'Data da visita';
+COMMENT ON COLUMN siabfacil.JUSTIFICATIVA_VISITA.familia_id IS 'Código de idenrificação da fmailia (relacionamento com o campo id da tabela siabfacil.familia)';
+COMMENT ON COLUMN siabfacil.JUSTIFICATIVA_VISITA.justificativa_id IS 'Código de identificação da justificativa (relacionamento com o campo id da tabela siabfacil.justificativa)';
+COMMENT ON COLUMN siabfacil.JUSTIFICATIVA_VISITA.obs IS 'Observação da visita';
+COMMENT ON COLUMN siabfacil.JUSTIFICATIVA_VISITA.cod_area IS 'Código de identificação da área (relacionamento com o campo cod_area da tabela cnes.lfces037)';
+COMMENT ON COLUMN siabfacil.JUSTIFICATIVA_VISITA.cod_mun IS 'Código de identificação do municipio (relacionamento com o campo cod_mun da tabela cnes.lfces037)';
+COMMENT ON COLUMN siabfacil.JUSTIFICATIVA_VISITA.prof_id IS 'Código de identificação do profissional (relacionamento com o campo prod_id da tabela cnes.lfces018)';
+COMMENT ON COLUMN siabfacil.JUSTIFICATIVA_VISITA.seq_equipe IS 'Sequencia da eqiupe (relacionamento com o campo seq_equipe da tabela cnes.lfces037)';
+COMMENT ON COLUMN siabfacil.JUSTIFICATIVA_VISITA.microarea IS 'Código de identificação da microarea';
+COMMENT ON COLUMN siabfacil.JUSTIFICATIVA_VISITA.cobertura_id IS 'Código de identificação da cobertura (relacionamento com o campo id da tabela siabfacil.cobertura)';
+COMMENT ON COLUMN siabfacil.JUSTIFICATIVA_VISITA.cobertura_microarea IS 'Código de identificação da cobertura da microarea';
+COMMENT ON COLUMN siabfacil.JUSTIFICATIVA_VISITA.cobertura_prof_id IS 'ódigo do profissional de cobertura (relacionamento com o campo prof_id da tabela cnes.lfces018) ';
+COMMENT ON COLUMN siabfacil.JUSTIFICATIVA_VISITA.importacao_acs_mobile_id IS 'Exibe se o tipo de acesso está ativo';
+COMMENT ON COLUMN siabfacil.JUSTIFICATIVA_VISITA.versao IS 'Exibe a versão do sistema';
+COMMENT ON COLUMN siabfacil.JUSTIFICATIVA_VISITA.uuid IS 'Indentificação universal - ESUS';

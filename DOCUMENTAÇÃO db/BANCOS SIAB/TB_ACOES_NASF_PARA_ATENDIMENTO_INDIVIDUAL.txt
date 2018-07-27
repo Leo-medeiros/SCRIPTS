@@ -1,0 +1,18 @@
+--SCRIPT DOCUMENTAÇÃO TABELA ACOES_NASF_PARA_ATENDIMENTO_INDIVIDUAL
+
+COMMENT ON COLUMN siabfacil.ACOES_NASF_PARA_ATENDIMENTO_INDIVIDUAL.acoes_nasf_id IS 'Codigo de Identificação das acoes do nasf';
+COMMENT ON COLUMN siabfacil.ACOES_NASF_PARA_ATENDIMENTO_INDIVIDUAL.atendimento_individual_id IS 'Código de identificação do atendimento individual';
+
+
+
+
+
+
+
+
+
+
+
+
+
+

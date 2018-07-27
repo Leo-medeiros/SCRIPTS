@@ -1,0 +1,4 @@
+--SCRIPT DOCUMENTAÇÃO TABELA VIGILANCIA_SAUDE_BUCAL_PARA_ATENDIMENTO_ODONTO
+
+COMMENT ON COLUMN siabfacil.vigilancia_saude_bucal_para_atendimento_odonto.atendimento_odonto_id IS 'Codigo de Identificação do atendimento de odonto (relacinamento com o campo id da tabela atendimento_odonto)';
+COMMENT ON COLUMN siabfacil.vigilancia_saude_bucal_para_atendimento_odonto.vigilancia_saude_bucal_codigo  IS 'Codigo de identificação da vigilancia saude bucal (relacionamento com campo codigo da tabela vigilancia_saude_bucal)';

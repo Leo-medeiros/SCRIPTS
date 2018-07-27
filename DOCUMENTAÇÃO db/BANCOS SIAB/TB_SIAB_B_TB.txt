@@ -1,0 +1,30 @@
+
+
+-- SCRIPT DE DOCUMENTAÇÃO DA TABELA siab_b_tb
+
+COMMENT ON COLUMN siabfacil.siab_b_tb.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.siab_b_tb.data_visita IS 'Exibe a data da visita do ACS';
+COMMENT ON COLUMN siabfacil.siab_b_tb.medicacao_diaria IS 'Informa se a pessoa faz uso de medicação diaria';
+COMMENT ON COLUMN siabfacil.siab_b_tb.reacoes IS 'Exibe se a pessoa tem reações indesejaveis';
+COMMENT ON COLUMN siabfacil.siab_b_tb.exame_escarro IS 'Exibe se a pessoa tem exame de escarro';
+COMMENT ON COLUMN siabfacil.siab_b_tb.person_id IS 'Código de identificação da pessoa (relacionamento com o cmapo di da tabela siabfacil.pessoa)';
+COMMENT ON COLUMN siabfacil.siab_b_tb.obs IS 'Exibe a observação do atendimento';
+COMMENT ON COLUMN siabfacil.siab_b_tb.cod_area IS 'Informa o código da área';
+COMMENT ON COLUMN siabfacil.siab_b_tb.cod_mun IS 'Informa o código do município';
+COMMENT ON COLUMN siabfacil.siab_b_tb.prof_id IS 'Código de identificação do profissional';
+COMMENT ON COLUMN siabfacil.siab_b_tb.seq_equipe IS 'Sequencia da equipe';
+COMMENT ON COLUMN siabfacil.siab_b_tb.tipo_de_monitoramento_id IS 'Código de identificação do tipo de monitoramento (relacionamento com o campo id da tabela siabfacil.tipo_de_monitoramento)';
+COMMENT ON COLUMN siabfacil.siab_b_tb.atendimento_id IS 'Código de identificação do atendimento (relacionamento com o campo id da tabela siabfacil.atendimento)';
+COMMENT ON COLUMN siabfacil.siab_b_tb.versao IS 'Exibe a versão do sistema';
+COMMENT ON COLUMN siabfacil.siab_b_tb.comunicantes_examinados IS 'Exibe os comunicantes examinados';
+COMMENT ON COLUMN siabfacil.siab_b_tb.menor_5anos_com_bcg IS 'Informa se tem menores de 5 anos com BCG';
+COMMENT ON COLUMN siabfacil.siab_b_tb.ultima_consulta IS 'Informa da ultima consulta';
+
+
+
+
+
+
+
+
+

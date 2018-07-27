@@ -1,0 +1,7 @@
+
+
+--SCRIPT DOCUMENTAÇÃO TABELA FAMILIA_TIPO_ANIMAL
+
+COMMENT ON COLUMN siabfacil.FAMILIA_TIPO_ANIMAL.familia_id IS 'Codigo de Identificação da familia (relacionamento com o campo id da tabela siabfacil.familia)';
+COMMENT ON COLUMN siabfacil.FAMILIA_TIPO_ANIMAL.tipo_animal_id IS 'Código de identificação do tipo de animal (relacionamento com o campo id da tabela siabfacil.tipo_animal)';
+COMMENT ON COLUMN siabfacil.FAMILIA_TIPO_ANIMAL.qtd IS 'Quantidade de animais';

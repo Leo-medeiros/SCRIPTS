@@ -1,0 +1,7 @@
+
+
+--SCRIPT DOCUMENTAÇÃO TABELA PESSOA_PARA_ATIVIDADE
+
+COMMENT ON COLUMN siabfacil.PESSOA_PARA_ATIVIDADE.atividade_id IS 'Codigo de Identificação da atividade (relacionamento com o campo id da tabela siabfacil.atividade)';
+COMMENT ON COLUMN siabfacil.PESSOA_PARA_ATIVIDADE.pessoa_id IS 'Codigo de Identificação da pessoa (relacionamento com o campo id da tabela siabfacil.pessoa)';
+COMMENT ON COLUMN siabfacil.PESSOA_PARA_ATIVIDADE.atendimento_individual_id IS 'Codigo de Identificação do atendimento (relacionamento com o campo id da tabela siabfacil.atendimento)';

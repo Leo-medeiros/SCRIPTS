@@ -1,0 +1,5 @@
+--SCRIPT DOCUMENTAÇÃO TABELA alimentacao_situacao_rua
+
+COMMENT ON COLUMN siabfacil.alimentacao_situacao_rua.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.alimentacao_situacao_rua.descricao  IS 'Descrição dos tipos de alimentação para moradores de rua';
+

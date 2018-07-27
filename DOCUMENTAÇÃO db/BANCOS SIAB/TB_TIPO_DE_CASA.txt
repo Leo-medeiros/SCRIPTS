@@ -1,0 +1,8 @@
+--SCRIPT DOCUMENTAÇÃO TABELA tipo_de_casa
+
+COMMENT ON COLUMN siabfacil.tipo_de_casa.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.tipo_de_casa.descricao IS 'Descrição dos tipos de casa';
+COMMENT ON COLUMN siabfacil.tipo_de_casa.ordem IS 'Ordem de exibição';
+
+
+

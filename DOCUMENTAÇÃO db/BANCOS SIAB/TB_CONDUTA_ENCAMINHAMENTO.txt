@@ -1,0 +1,5 @@
+
+
+-- SCRIPT DE DOCUMENTAÇÃO TABELA conduta_encaminhamento	
+COMMENT ON COLUMN siabfacil.conduta_encaminhamento.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.conduta_encaminhamento.descricao IS 'Descrição da conduta e encaminhamento';

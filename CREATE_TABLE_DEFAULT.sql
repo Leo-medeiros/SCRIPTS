@@ -1,0 +1,8 @@
+USE teste 
+
+CREATE TABLE equipamentos
+(
+nome VARCHAR (70) NOT NULL,
+cor VARCHAR (20) NOT NULL,
+tamanho VARCHAR (20) NOT NULL DEFAULT '1,00',
+);

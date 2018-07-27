@@ -1,0 +1,17 @@
+--SCRIPT DOCUMENTAÇÃO TABELA EXAME
+
+COMMENT ON COLUMN siabfacil.EXAME.id IS 'Código de identificação';
+COMMENT ON COLUMN siabfacil.EXAME.data IS 'Data de realização do exame';
+COMMENT ON COLUMN siabfacil.EXAME.pessoa_id IS 'Código de identificação da pessoa (relacionamento com o campo id da tabela siabfacil.pessoa)';
+COMMENT ON COLUMN siabfacil.EXAME.tipo_de_exame_id IS 'Código de identificação do exame (relacionamento com o campo id da tabela siabfacil.tipo_de_exame)';
+COMMENT ON COLUMN siabfacil.EXAME.tipo_de_monitoramento_id IS 'Código de identificação do tipo de monitoramento (relacionamento com o campo tipo_de_monitoramento_id da tabela siabfacil.monitoramento)';
+COMMENT ON COLUMN siabfacil.EXAME.versao IS 'Exibe a versão do sistema';
+COMMENT ON COLUMN siabfacil.EXAME.data_registro IS 'Data de registro do exame';
+COMMENT ON COLUMN siabfacil.EXAME.prof_id IS 'Código de identificação do profissional';
+COMMENT ON COLUMN siabfacil.EXAME.cod_area IS 'Código de área';
+COMMENT ON COLUMN siabfacil.EXAME.cod_mun IS 'Código de municipio';
+COMMENT ON COLUMN siabfacil.EXAME.seq_equipe IS 'Sequencia da equipe';
+COMMENT ON COLUMN siabfacil.EXAME.microarea IS 'Código de identificação da microárea';
+COMMENT ON COLUMN siabfacil.EXAME.familia_id IS 'Código de identificação da familia (relacionamento com o campo id da tabela siabfacil.familia)';
+COMMENT ON COLUMN siabfacil.EXAME.atendimento_id IS 'Código de identificação do atendimento (relacionameto com o campo atendimento_id da tabela siabfacil.monitoramento)';
+

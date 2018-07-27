@@ -1,0 +1,9 @@
+-- SCRIPT DE DOCUMENTAÇÃO DA TABELA pessoa_grupo_de_pessoas
+
+COMMENT ON COLUMN siabfacil.pessoa_grupo_de_pessoas.pessoa_id IS 'Codigo de Identificação da pessoa (relacionamento com o campo id da tabela siabfacil.pessoa)';
+COMMENT ON COLUMN siabfacil.pessoa_grupo_de_pessoas.grupo_de_pessoas_id IS 'Codigo de Identificação do grupo de pessoas';
+
+
+
+
+

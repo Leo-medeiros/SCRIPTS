@@ -1,0 +1,16 @@
+USE RECEPCAO;
+SELECT  DISTINCT A.NOME, A.NOMEEQUIPE, A.IDADE, A.MAE, A.PRONTUARIO, A.CNS, CONVERT (VARCHAR (20), B.DATA, 103) DataResultado, convert(varchar(max),B.RESULTADO) resultado, convert(varchar(max),B.observacao) observacao
+FROM INDICADORES.VW_PEP_SIAB A
+INNER JOIN EXAMES.ULTRASSONOGRAFIA B ON A.IDPEP = B.CODPAC
+
+
+
+
+
+
+
+
+
+
+
+

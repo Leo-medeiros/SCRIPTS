@@ -1,0 +1,6 @@
+--SCRIPT DOCUMENTAÇÃO TABELA AUDITORIA_MENSAGEM
+
+COMMENT ON COLUMN siabfacil.auditoria_mensagem.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.auditoria_mensagem.usuario_id IS 'Codigo do usuário';
+COMMENT ON COLUMN siabfacil.auditoria_mensagem.motivo IS 'Motivo da auditoria';
+COMMENT ON COLUMN siabfacil.auditoria_mensagem.data IS 'Data da auditoria';

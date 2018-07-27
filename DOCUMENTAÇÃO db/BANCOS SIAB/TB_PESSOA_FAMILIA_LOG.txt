@@ -1,0 +1,16 @@
+-- SCRIPT DE DOCUMENTAÇÃO TABELA PESSOA_FAMILIA_LOG	
+COMMENT ON COLUMN siabfacil.pessoa_familia_log.id IS 'Codigo de Identificação';
+COMMENT ON COLUMN siabfacil.pessoa_familia_log.pessoa_id IS 'Codigo de Identificação da pessoa (relacionamento com o campo id da tabela siabfacil.pessoa)';
+COMMENT ON COLUMN siabfacil.pessoa_familia_log.cod_mun IS 'Código do profissional';
+COMMENT ON COLUMN siabfacil.pessoa_familia_log.prof_id IS 'Código de área';
+COMMENT ON COLUMN siabfacil.pessoa_familia_log.seq_equipe IS 'Sequencia da equipe';
+COMMENT ON COLUMN siabfacil.pessoa_familia_log.familia_id IS 'Código de identificação da familia (relacionamento com o campo id da tabela siabfacil.familia)';
+COMMENT ON COLUMN siabfacil.pessoa_familia_log.usuario_saida_id IS 'Código de identificação do usuário de saida';
+COMMENT ON COLUMN siabfacil.pessoa_familia_log.posicao_familiar_id IS 'Código do identificação da posição familiar (relacionamento com o campo id da tabela siabfacil.posicao_familiar)';
+COMMENT ON COLUMN siabfacil.pessoa_familia_log.usuario_entrada_id IS 'Código de identificação do usuário de entrada';
+COMMENT ON COLUMN siabfacil.pessoa_familia_log.data_entrada IS 'Data de entrada';
+COMMENT ON COLUMN siabfacil.pessoa_familia_log.data_saida IS 'Data de saida';
+COMMENT ON COLUMN siabfacil.pessoa_familia_log.numero IS 'número';
+COMMENT ON COLUMN siabfacil.pessoa_familia_log.cod_area IS 'Código da área';
+
+
